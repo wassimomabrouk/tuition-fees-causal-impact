@@ -1,0 +1,14 @@
+# Verified working together on Python 3.12+.
+duckdb
+pandas
+numpy
+pyarrow
+scipy
+matplotlib
+statsmodels
+# Causal / staggered DiD:
+differences>=0.3.0
+pyfixest>=0.60.0
+wildboottest        # wild cluster bootstrap, few-cluster inference
+# Pipeline tests:
+pytest

@@ -1,0 +1,17 @@
+state,state_en,state_code,ever_treated,decision_date,intro_semester,intro_year,abolish_semester,abolish_year,semesters_charged,notes
+Schleswig-Holstein,Schleswig-Holstein,01,0,,,,,,0,never introduced general fees
+Hamburg,Hamburg,02,1,2006-06-28,SS 2007,2007,WS 2012/13,2012,11,VERIFIED SS 2007 (not 2006 or 2008). Planned for SS 2006 but actually introduced SS 2007. From WS 2008/09 switched to a deferred-payment model of 375 EUR payable after graduation so treatment intensity drops mid-period.
+Niedersachsen,Lower Saxony,03,1,2005-12-09,WS 2006/07,2006,WS 2014/15,2014,16,first-years charged from WS 2006/07; continuing students only from SS 2007. Last state to abolish.
+Bremen,Bremen,04,0,,,,,,0,Studienkonten model for non-residents suspended by court Aug 2006 and never effectively enforced; not a general fee
+Nordrhein-Westfalen,North Rhine-Westphalia,05,1,2006-03-16,WS 2006/07,2006,WS 2011/12,2011,10,first-years charged from WS 2006/07. HETEROGENEOUS: each university chose whether and how much to charge up to 500 EUR
+Hessen,Hesse,06,1,2006-10-05,WS 2007/08,2007,WS 2008/09,2008,2,shortest episode. Last charged SS 2008
+Rheinland-Pfalz,Rhineland-Palatinate,07,0,,,,,,0,long-term-student fees only; no general fee for a first degree
+Baden-Wuerttemberg,Baden-Wuerttemberg,08,1,2005-12-15,SS 2007,2007,SS 2012,2012,10,charged SS 2007 through WS 2011/12
+Bayern,Bavaria,09,1,2006-05-18,SS 2007,2007,WS 2013/14,2013,13,HETEROGENEOUS: 300-500 EUR at universities and 100-500 EUR at Fachhochschulen. Abolished after a successful Volksbegehren
+Saarland,Saarland,10,1,2006-07-12,WS 2007/08,2007,SS 2010,2010,5,300 EUR for the first two semesters then 500 EUR
+Berlin,Berlin,11,0,,,,,,0,never introduced general fees
+Brandenburg,Brandenburg,12,0,,,,,,0,never introduced general fees
+Mecklenburg-Vorpommern,Mecklenburg-West Pomerania,13,0,,,,,,0,never introduced general fees
+Sachsen,Saxony,14,0,,,,,,0,never introduced general fees
+Sachsen-Anhalt,Saxony-Anhalt,15,0,,,,,,0,never introduced general fees
+Thueringen,Thuringia,16,0,,,,,,0,never introduced general fees

@@ -1,0 +1,7 @@
+check,statistic,passes
+1 joint pre-trend,RI p = 0.2100 (chi2 p = 0.0003),pass
+2 placebo inference,SD 0.0300 vs SE 0.0180,pass
+3 in-time placebo,worst +0.47%,pass
+4 randomisation,p = 0.0090,pass
+5 leave-one-out,range -7.45% to -5.51%,pass
+6 western controls,-5.04%,pass

@@ -1,0 +1,7 @@
+check,result
+balanced panel,True
+no duplicate state-periods,True
+no missing outcomes,True
+treatment matches fee_dates.csv,True
+7 treated / 9 never-treated,True
+no 2016 break beyond 3x typical,True

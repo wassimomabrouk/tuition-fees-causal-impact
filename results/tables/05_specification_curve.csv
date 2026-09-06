@@ -1,0 +1,24 @@
+spec,family,pct
+drop Hamburg,leave-one-out,-7.447173276080266
+controls: excl_city_states,comparison group,-7.3953420438504835
+drop Niedersachsen,leave-one-out,-7.196970600937435
+drop Thueringen,leave-one-out,-6.5284367216408405
+drop Bremen,leave-one-out,-6.521286640272583
+drop Schleswig-Holstein,leave-one-out,-6.476200408604327
+drop Mecklenburg-Vorpommern,leave-one-out,-6.37952966517622
+drop Sachsen,leave-one-out,-6.356950419322327
+drop Rheinland-Pfalz,leave-one-out,-6.305310771030692
+baseline (Callaway-Sant'Anna),baseline,-6.28065561965232
+controls: all_never_treated,comparison group,-6.28065561965232
+drop Sachsen-Anhalt,leave-one-out,-6.1893194008695644
+drop Hessen,leave-one-out,-6.174089255875293
+drop Bayern,leave-one-out,-6.141466428389175
+drop Berlin,leave-one-out,-5.976789506440494
+drop Baden-Wuerttemberg,leave-one-out,-5.864794759351777
+drop Brandenburg,leave-one-out,-5.789329232173723
+drop Saarland,leave-one-out,-5.6313653593454855
+drop Nordrhein-Westfalen,leave-one-out,-5.50952902260301
+controls: west_never_treated,comparison group,-5.042284133316965
+placebo shift -3,in-time placebo,0.4708137447420935
+placebo shift -4,in-time placebo,1.7127638373593657
+placebo shift -5,in-time placebo,3.7110403266183534
