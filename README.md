@@ -67,15 +67,26 @@ abolition semester with a source note. Three states introduced fees in the summe
 the WS 2007/08 states.
 
 The indicator marks *whether a general fee regime was in force*, not how much was charged,
-and the regimes were not uniform. Nordrhein-Westfalen, the largest state in the sample, left
-the decision to each university, so parts of it were never effectively treated. Bayern
-charged between 300 and 500 euros depending on institution type. Hessen charged for only two
-semesters before abolishing.
+and the regimes were not uniform. Two distinct problems sit underneath that, and they are
+worth separating because they are different failures with different remedies.
 
-A binary indicator over a heterogeneous treatment attenuates the estimate toward zero. This
-is visible in the leave-one-out result, where dropping Nordrhein-Westfalen produces the
-weakest estimate of all sixteen drops (-5.51%), which is what you would expect if its partial
-treatment were diluting the treated group.
+**Varying dose.** Bayern charged between 300 and 500 euros depending on institution type, and
+Hessen charged for only two semesters before abolishing. Treated units received genuinely
+different amounts of treatment, so the coefficient is an average over a range of doses.
+
+**Partial compliance.** Nordrhein-Westfalen, the largest state in the sample, left the
+decision to each university, so some units inside a state coded as treated were never
+actually treated. That is not dose variation but non-compliance, and it makes the estimate
+for that state closer to an intent-to-treat effect than to an effect of paying fees.
+
+Both attenuate the estimate toward zero, and the leave-one-out result is consistent with it:
+dropping Nordrhein-Westfalen produces the weakest estimate of all sixteen drops (-5.51%),
+which is what you would expect if its partial treatment were diluting the treated group.
+
+A dose-response specification would be the obvious next move and is deliberately not run.
+Fee levels were chosen by the states, not assigned, so a regression of effect size on euros
+would be fitting a slope through seven self-selected points. That would look more precise and
+be less defensible.
 
 That does not make the reported effect a lower bound. It pushes one way; the type-M problem
 below pushes the other. The net direction is not something this design can sign.
@@ -143,8 +154,7 @@ leaning on eastern controls is partly measuring east against west. Restricted to
 western never-treated states the estimate is -5.04% and still excludes zero. One
 qualification worth stating: that figure sits below the western group's own detectability
 threshold, which notebook 03 fixed at 6.1% before estimation, so it is consistent with the
-pooled result rather than independent confirmation of it. (Notebook 05 re-derives the
-per-group thresholds by scaling and gets 6.3%; the pre-committed figure is the one quoted.) Excluding the city states, whose enrolment is dominated by inflow, gives
+pooled result rather than independent confirmation of it. Excluding the city states, whose enrolment is dominated by inflow, gives
 -7.40%. The three groups span -5.04% to -7.40%, all negative, all excluding zero.
 
 ## The judgment call worth reading
@@ -180,8 +190,11 @@ the defence here and the permutation result only supports it.
 The chi2 rejection is reported rather than deleted, because a reader running the textbook
 test on the full window will get it and should find it addressed.
 
-**Direction of any residual pre-trend.** The slope is positive, meaning treated states were
-gaining on controls before fees arrived. Projected forward it predicts a positive
+**Direction of any residual pre-trend.** Three specifications estimate it and all three
+agree: +0.50 percentage points per year from the pre-period regression in notebook 03, +1.12
+from the unnormalised log gap, and +0.62 from the event-study slope in notebook 05. The slope
+is positive on every reading, meaning treated states were gaining on controls before fees
+arrived. Projected forward it predicts a positive
 post-treatment gap. The estimate is negative, so a residual trend of this shape works against
 the finding rather than producing it.
 
@@ -201,6 +214,17 @@ the finding rather than producing it.
   indicator.
 - **A clean east-west separation.** Treatment status is close to collinear with geography.
   The western-only specification is the best available answer and it is underpowered.
+- **That adoption was unrelated to state politics.** Fees followed the 2005 constitutional
+  court ruling and were introduced overwhelmingly by CDU/CSU-led governments, while the three
+  western never-treated states were SPD-led. Geography is the visible shadow of that
+  selection, not its cause, so the western-only comparison narrows the problem without
+  removing it: the cleanest comparison available here is still centre-right states against
+  centre-left ones. If party control correlates with anything that moves enrolment
+  trajectories, higher-education budgets or labour markets, it is inside the estimate. The
+  near-lead pre-trend test is the relevant evidence against this and does not reject
+  (p = 0.507), but a confound that switches on in 2006 would not show up there at all.
+  Bounding it properly needs a sensitivity analysis over the size of a possible violation
+  (Rambachan and Roth), which `DESIGN.md` schedules for phase 2.
 
 ## Reproduce it
 

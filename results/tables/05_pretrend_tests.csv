@@ -1,4 +1,4 @@
 test,statistic,p (chi2),p (randomisation)
-"joint Wald, leads -8 to -2 (7 leads)",27.286505374094595,0.00029593212406894186,0.21
+"joint Wald, leads -8 to -2 (7 leads)",27.286505374094865,0.00029593212406890906,0.21
 "joint Wald, leads -4 to -2 (3 leads)",2.329716398364088,0.5068519500073234,0.6066666666666667
 linear pre-trend slope (per period),0.006166255140878272,0.27055554403339244,
