@@ -1,0 +1,5 @@
+outcome,treated,controls,pre,post,resid SD,MDE,"MDE, readable"
+log(German location / origin),7,9,3,2,0.03217089480116186,0.041463510751708385,+4.23%
+stayers / origin,7,9,3,2,0.01303712673756598,0.016802922268575795,0.0168 (2.7% of base)
+log origin (participation),7,9,3,2,0.019346952657760954,0.024935351798448985,+2.52%
+net inflow per 1 000 origin,7,9,3,2,34.001079682462844,43.822347550388194,43.8 per 1 000

@@ -1,0 +1,12 @@
+decision,value
+primary outcome,attraction = log(german_location / origin)
+second outcome,retention = stayers / origin
+participation margin,log(origin)
+robustness variant,"net_inflow per 1 000 origin (underpowered, reported)"
+window,"WS 2003/04 to WS 2007/08, 3 pre + 2 post"
+comparison group,all nine never-treated; western-only as co-primary
+estimator,"Callaway-Sant'Anna, never-treated controls; TWFE as diagnostic"
+inference,"clustered by state, plus randomisation inference (16 clusters)"
+"MDE, attraction",4.23%
+"MDE, retention",0.0168
+null rule,"an estimate below the MDE is reported as uninformative, not as no effect"

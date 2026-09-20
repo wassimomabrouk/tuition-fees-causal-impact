@@ -6,6 +6,7 @@ pyarrow
 scipy
 matplotlib
 statsmodels
+xlrd                # legacy .xls reader, for the Fachserie volumes (phase 2)
 # Causal / staggered DiD:
 differences>=0.3.0
 pyfixest>=0.60.0

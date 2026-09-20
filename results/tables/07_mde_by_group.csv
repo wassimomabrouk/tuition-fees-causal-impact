@@ -1,0 +1,7 @@
+comparison group,outcome,treated,controls,MDE,readable
+all never-treated (9),log(German location / origin),7,9,0.041463510751708385,+4.23%
+all never-treated (9),stayers / origin,7,9,0.016802922268575795,0.0168
+western never-treated (3),log(German location / origin),7,3,0.045132707191464276,+4.62%
+western never-treated (3),stayers / origin,7,3,0.024294547207567258,0.0243
+excluding city states,log(German location / origin),6,7,0.04451970664560565,+4.55%
+excluding city states,stayers / origin,6,7,0.0176777854331757,0.0177

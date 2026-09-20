@@ -1,0 +1,22 @@
+spec,family,ATT
+drop Niedersachsen,leave-one-out,-0.04936702087584256
+drop Sachsen-Anhalt,leave-one-out,-0.04790024037018438
+controls: no double cohort in controls,comparison group,-0.04790024037018438
+drop Berlin,leave-one-out,-0.03975483120334438
+drop Rheinland-Pfalz,leave-one-out,-0.03845117423322105
+drop Schleswig-Holstein,leave-one-out,-0.03792334566228752
+drop Bayern,leave-one-out,-0.03777320209187213
+controls: excluding city states,comparison group,-0.03751943191825421
+drop Hessen,leave-one-out,-0.03727948683100046
+controls: all never-treated (9),comparison group,-0.036731859048243914
+baseline,baseline,-0.036731859048243914
+drop Bremen,leave-one-out,-0.03622450495964823
+drop Mecklenburg-Vorpommern,leave-one-out,-0.03596423117642738
+drop Baden-Wuerttemberg,leave-one-out,-0.03448280826759398
+drop Sachsen,leave-one-out,-0.034019905251334144
+drop Hamburg,leave-one-out,-0.03390943170376928
+drop Saarland,leave-one-out,-0.033840004132230456
+drop Thueringen,leave-one-out,-0.03256093606789256
+drop Nordrhein-Westfalen,leave-one-out,-0.03138168260893467
+controls: western never-treated (3),comparison group,-0.030322665153777018
+drop Brandenburg,leave-one-out,-0.027787562509855496

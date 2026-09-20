@@ -1,0 +1,10 @@
+group,outcome,ATT,lo,hi,MDE,above MDE?,excludes 0?
+all never-treated (9),log(origin): participation,-0.029479821591043676,-0.07099831075182393,0.01203866756973658,0.0249,yes,no
+all never-treated (9),log(location/origin): attraction,-0.03673185904824391,-0.07204129457007277,-0.0014224235264150356,0.0415,no,yes
+all never-treated (9),stayers/origin: retention,-0.006031734581568985,-0.021430720877637907,0.009367251714499935,0.0168,no,no
+western never-treated (3),log(origin): participation,-0.020564067065661076,-0.058689268012835666,0.017561133881513518,0.0249,no,no
+western never-treated (3),log(location/origin): attraction,-0.030322665153777018,-0.06263291973863373,0.0019875894310796977,0.0451,no,no
+western never-treated (3),stayers/origin: retention,-0.015032283968338944,-0.03449983628589665,0.004435268349218764,0.0243,no,no
+excluding city states,log(origin): participation,-0.04266884069908135,-0.07941601337428067,-0.005921668023882033,0.0249,yes,yes
+excluding city states,log(location/origin): attraction,-0.0375194319182542,-0.07772864997186346,0.00268978613535506,0.0415,no,no
+excluding city states,stayers/origin: retention,-0.008150587930867332,-0.025003888679920504,0.00870271281818584,0.0168,no,no

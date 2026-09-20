@@ -30,8 +30,8 @@ just three semesters.
 |---|---|---|---|---|
 | first-years by **university location** | GENESIS 21311-0014 | Bundesland x winter semester | WS 1998/99 onward (28 semesters) | **verified** |
 | first-years by **home state** (state where the university-entrance qualification was earned) | GENESIS 21381-0011 | Bundesland x year | 2000-2023 | **verified** |
-| HZB / Abitur cohort size (denominator) | GENESIS, Schulstatistik | Bundesland x year | not yet checked | **to verify, and REQUIRED** |
-| full home-state x study-state migration matrix | unknown | | | **not found** |
+| HZB / Abitur cohort size (denominator) | GENESIS, Schulstatistik | Bundesland x year | not needed, see below | **resolved: not required** |
+| first-years by **study state x home state** (full matrix) | Fachserie 11 R 4.1, detailed table 6 | Bundesland x Bundesland x winter semester | WS 2003/04 onward as machine-readable xls | **verified** |
 
 *Table substitution, recorded during acquisition.* This section first specified
 **21311-0015** for the study-location outcome. It proved unusable in practice: it is broken
@@ -40,12 +40,31 @@ the GENESIS row limit. **21311-0014** carries the same measure at the grain this
 (Bundesland x winter semester, split only by nationality and sex, both of which are taken as
 `Insgesamt`) and is the table the pipeline reads. Every reference below is to 21311-0014.
 
-**The denominator table is load-bearing, not optional.** The diversion outcome (section
-6.1) is the *difference* between two measures, so both must be in the same units. Table
-21311-0014 is a count; 21381-0011 is a rate over the age cohort. Converting the rate back
-to a count requires the HZB cohort size. **If that table cannot be found, the derived
-net-migration outcome cannot be constructed** and the project falls back to comparing the
-two measures in normalised form only. This must be settled before the panel is built.
+**The denominator problem, and how it was resolved (phase 2 feasibility check).** This
+section originally recorded the HZB cohort size as load-bearing: the diversion outcome
+(section 6.1) is the *difference* between two measures, so both must be in the same units,
+and converting the rate in 21381-0011 back to a count appeared to require it.
+
+Two findings during the phase 2 feasibility check removed the requirement.
+
+First, the assumption behind it was wrong. The Studienanfaengerquote is **not** students per
+school leaver. Destatis computes it by the *Quotensummenverfahren* from the student
+statistics for the reporting year and the population statistics as at 31 December of the
+previous year: an age-specific share is computed for each single year of age and the shares
+are summed. The denominator is resident population by age, not the HZB cohort, so the
+Schulstatistik table would not have converted it in any case.
+
+Second, and better, a source was found that supplies **both margins as counts**, removing
+the need to convert anything: Fachserie 11 Reihe 4.1, detailed table 6, *Studierende und
+Studienanfaenger/-innen nach Land des Studienortes und Land des Erwerbs der
+Hochschulzugangsberechtigung*. It is published per winter semester as a structured xls with
+a `TAB-06` sheet, carrying a 16 x 16 matrix of first-years by study state and HZB state, with
+`Ausland` and `ohne Angabe` as separate columns.
+
+Verified against the existing panel: the Deutschland first-years total in table 6 for
+WS 2006/07 is **294 946**, which equals the national sum of `first_years_location` in
+`panel.parquet` for 2006 to the unit. The two sources are therefore the same measure, and no
+reconciliation assumption is needed between the phase 1 and phase 2 outcomes.
 
 **Known asymmetry.** The two outcomes do not match exactly:
 21311-0014 is a semester-level **count**, 21381-0011 is an annual **rate**.
@@ -533,6 +552,225 @@ The project closes by converting the estimate into something a decision-maker ca
 - **Enrolment by university location:** Destatis GENESIS 21311-0014.
 - **First-year rate by home state:** Destatis GENESIS 21381-0011.
 - **Treatment dates:** hand-coded from the legal record, `data/treatment/fee_dates.csv`.
+
+## 14. Phase 2: deterrence or diversion
+
+*Written after phase 1 shipped and after the feasibility check in 0.2, and before any phase 2
+code. Phase 1 established that first-year enrolment in the fee states fell by roughly 5 to 7
+percent at the university location. That outcome counts students where they enrol, so a
+student who abandoned higher education and a student who crossed a state border are
+indistinguishable in it. Phase 2 separates them.*
+
+### 14.1 Data and window
+
+Primary source: **Fachserie 11 Reihe 4.1, detailed table 6**, sheet `TAB-06`, one xls per
+winter semester. The sheet holds two stacked blocks with identical layout, *Studierende
+insgesamt* and *Studienanfaenger/-innen insgesamt*; phase 2 uses the second. Rows are the
+study state (three per state, m / w / i) and columns are the state where the HZB was earned,
+plus `Insgesamt`, `Ausland` and `ohne Angabe`.
+
+**Window: WS 2003/04 to WS 2007/08. Three pre-periods, two post.**
+
+Shorter than phase 1's ten periods, for a reason that is worth recording rather than hiding.
+The Fachserie became a free download from WS 2003/04; earlier volumes exist in the
+Statistische Bibliothek only as scans whose OCR is unusable for numeric tables (sampled
+output includes `Statistisch€s Bundesamt` and `bild6nde Künste`). Digit-level OCR errors are
+silent, so extracting a 16 x 16 matrix from them would produce numbers that cannot be
+validated. The window is therefore set by data quality, not by convenience.
+
+The end of the window is the same absorbing-treatment boundary as phase 1 (section 2):
+Hessen abolishes from WS 2008/09.
+
+**Consequence, stated in advance: three pre-periods is thin.** The joint pre-trend test that
+carried check 1 in phase 1 will have far less power here. This is the main cost of the matrix
+route and it is not compensated by anything else in the design.
+
+**Secondary outcome, retained for exactly that reason:** GENESIS 21381-0011, the
+Studienanfaengerquote by state of HZB acquisition, 2000 to 2023. It is a weaker measure (a
+constructed rate whose denominator is a population extrapolation, least accurate far from a
+census, which is precisely this window) but it reaches back three years further and can test
+pre-trends where the primary cannot. The two outcomes fail in different directions, which is
+the point of carrying both.
+
+### 14.2 Timing alignment
+
+A *Studienjahr* is the summer semester plus the following winter semester (definition in
+force since WS 1996/97, so stable across this window). Table 6 is per winter semester, so
+phase 2 inherits phase 1's winter-semester grain and the annual-versus-semester problem
+recorded in 0.2 does not arise for the primary outcome.
+
+It does arise for the secondary outcome, which is annual. Mapping is exact rather than
+approximate, because no reform falls mid-semester:
+
+| Studienjahr | halves | states charging |
+|---|---|---|
+| 2006 | SS 2006, **WS 2006/07** | NRW, Niedersachsen: second half only |
+| 2007 | **SS 2007**, **WS 2007/08** | NRW, NI both halves; HH, BW, BY both halves; Hessen, Saarland second half only |
+
+Treatment within a Studienjahr is therefore exactly none, half or all of it, and is encoded
+as that fraction rather than rounded.
+
+### 14.3 Outcomes
+
+From the first-years block of table 6, for state `s` in winter semester `t`:
+
+- `study_location[s,t]` = row total. Reproduces the phase 1 outcome and is used as a
+  reconciliation check, not as a new result.
+- `origin[s,t]` = column total over study states. First-years **from** state `s`, wherever
+  they enrolled. This is the participation margin, **as a count**.
+- `net_inflow[s,t]` = `study_location - origin`. The diversion outcome.
+- `flow[o,d,t]` = matrix interior. First-years with HZB from `o` studying in `d`, used for
+  the destination analysis in 14.6.
+
+`Ausland` and `ohne Angabe` cannot be attributed to a German state, so they are absent from
+`origin` by construction. The question is whether they should also be removed from
+`study_location` before taking the difference.
+
+**Decided: remove them from both sides.**
+
+    net_inflow[s,t] = (study_location[s,t] - unattributed[s,t]) - origin[s,t]
+
+so that both terms count only first-years holding a German HZB.
+
+The alternative, leaving `study_location` intact, would preserve exact comparability with the
+phase 1 outcome. It is rejected, on evidence collected before any estimation:
+
+- the unattributed share is **13 to 14 percent nationally**, far too large to treat as
+  rounding
+- it varies more than threefold across states, from 25.5 percent in Berlin to 7.2 percent in
+  Schleswig-Holstein, so the contamination would be concentrated in particular states rather
+  than spread evenly
+- it moves **within** the window and differently by state (Hamburg swings 11.6 to 16.7 and
+  back to 12.3; Schleswig-Holstein falls steadily from 10.2 to 7.2), so state fixed effects
+  would not absorb it
+- the fee-state and never-treated group means cross over in **2006**, the first treated
+  winter semester. The movement is small but it is differential movement in the contaminating
+  component, aligned with the treatment date, and under the alternative it would enter the
+  estimate indistinguishably from a fee effect
+
+Berlin, the most contaminated state at 25.5 percent, is a control; Schleswig-Holstein, the
+least at 7.2 percent, is one of the three western never-treated states carrying the
+co-primary comparison. The alternative would therefore have made the cleanest comparison in
+the study the most contaminated one.
+
+Substantively the same argument holds: a 500 euro semester fee is a real constraint on a
+German school leaver choosing between two German states, and close to irrelevant to someone
+choosing between Germany and another country. Mixing the two populations gives a coefficient
+that answers no single question.
+
+The comparability that the alternative buys is worth less than it appears, since `net_inflow`
+is modelled in levels rather than logs (below) and is not directly comparable with phase 1's
+coefficient in any case.
+
+**Carried as a robustness check**, not discarded: the specification with `study_location` left
+intact is re-run in notebook 07 and reported alongside. The per-state share table is reported
+as a figure, since it is the justification for the choice.
+
+`study_location` itself is kept unmodified in the panel, so the reconciliation against the
+phase 1 outcome (14.8) still holds exactly.
+
+#### Scaling of the diversion outcome, revised after the power check
+
+`net_inflow` can be negative and is a difference of counts, so it cannot be logged. This
+section originally specified reporting it per 1 000 of the state's origin cohort.
+
+**That scaling was found to be underpowered and is demoted to a robustness variant.** The
+revision was made on **pre-treatment variance only**, using the 2003 to 2005 residual after
+absorbing state and year effects, and no treatment-period information entered the decision.
+
+The diagnosis: dividing by `origin` puts a small, volatile denominator under a difference.
+Bremen's origin cohort is roughly 2 600 against a university sector serving a wider region,
+so its ratio sits near +640 per 1 000 and moves sharply year to year; Sachsen-Anhalt is the
+other large contributor, and there the denominator is inflated by the 2007 G8 double cohort
+already recorded in 0.3. Those two states carry residual standard deviations around 84, about
+double any other. Note also that 97 percent of the raw variance in this outcome is *between*
+states rather than within, so it is absorbed by state fixed effects and the cross-state
+dispersion overstates what the estimator actually faces.
+
+Two scale-free outcomes from the same table are substantially better powered:
+
+| outcome | pre-period residual SD | MDE |
+|---|---|---|
+| `net_inflow` per 1 000 origin (original) | 34.0 | 43.8 per 1 000 |
+| **`log(german_location / origin)`** (primary) | 0.032 | **4.2 percent** |
+| **`stayers / origin`** (second outcome) | 0.013 | **1.7 points on a base of 0.611** |
+
+**Primary: `attraction = log(german_location / origin)`.** The log of the ratio of German-HZB
+first-years a state hosts to those it produces. Positive means a net importer. It is
+scale-free, symmetric in the two margins, well defined because both terms are strictly
+positive, and it is in log points, which restores direct comparability with the phase 1
+coefficient that the levels scaling had given up.
+
+**Second outcome: `retention = stayers / origin`.** The share of a state's own school leavers
+who enrol in that state. This is the most direct test of diversion available: if fees push
+students across a border, the fraction staying home is the first thing that should move. It
+is also the least noisy series in the table.
+
+`net_inflow` in levels and per 1 000 is **retained and reported** alongside both, so the
+change of scaling is visible in the output rather than hidden.
+
+The MDE for the primary outcome, 4.2 percent, sits below the 6.3 percent phase 1 estimated on
+the location margin, so the design can detect an effect of the size phase 1 implies if one is
+there. The MDE is recomputed in notebook 07 and is the pre-committed threshold.
+
+### 14.4 Identifying assumption for the derived outcome
+
+Section 6.1 already states this and it is restated here because it is the assumption most
+likely to fail. A DiD on `net_inflow` requires parallel trends **in the difference**, which is
+neither implied by nor implies parallel trends in either component. Two states whose
+enrolment and whose origin cohorts each trend differently can still have a stable gap, and
+two states with parallel components can have a diverging gap.
+
+It is therefore tested on its own terms: the pre-period event study is run on `net_inflow`
+directly, not inferred from the components passing.
+
+### 14.5 What counts as which answer, fixed before estimation
+
+| `origin` (participation) | `attraction` = log(location/origin) | `retention` | reading |
+|---|---|---|---|
+| falls | flat | flat | **deterrence**: fee states' school leavers became less likely to enrol anywhere |
+| flat | falls | falls | **diversion**: the same people enrolled across a border |
+| falls | falls | falls | **both**, with the split given by how much of the location fall `origin` accounts for |
+| flat | flat | flat | phase 1's result does not replicate in this window; report that |
+
+`attraction` and `retention` should move together under diversion and are reported together
+for that reason: `retention` isolates the state's own school leavers leaving, `attraction`
+combines that with any change in students arriving from elsewhere. A fall in `attraction`
+with flat `retention` would mean the state stopped attracting outsiders rather than losing
+its own, which is a different mechanism and is reported as such.
+
+The fourth row is a real possibility and is listed deliberately: phase 1's effect is
+identified off a ten-period window and phase 2 has five, so a failure to replicate is
+informative about the shorter window rather than evidence against phase 1.
+
+### 14.6 Destination analysis
+
+Conditional on diversion appearing, the matrix interior answers where students went. The
+pre-committed hypothesis is that flows from a fee state rise disproportionately into
+**bordering fee-free states**, because the cost of crossing is lowest there. Testing it needs
+an adjacency matrix for the sixteen states, which is hand-coded and sourced like
+`fee_dates.csv`, and it is descriptive evidence on the mechanism rather than a second causal
+estimate.
+
+### 14.7 Power, before estimation
+
+The minimum detectable effect is computed for `net_inflow` on this window, with its three
+pre-periods and two post-periods, using `src/estimation.py` and reported before any treatment
+effect is estimated, exactly as notebook 03 did for phase 1. If the MDE exceeds the effect
+size phase 1 would imply, that is recorded as a design limit up front and a null is reported
+as uninformative rather than as evidence of no diversion.
+
+### 14.8 Extraction
+
+Five workbooks, one parser. The first-years block is located by searching for its header row
+rather than by a fixed row index, since the number of sheets differs between volumes (36 in
+WS 2003/04, 50 in WS 2006/07) even though `TAB-06` itself is identical in shape.
+
+Validation, run per volume and enforced in `tests/`: the Deutschland row must equal the sum
+of the sixteen state rows; `study_location` must equal `first_years_location` in the existing
+panel for the overlapping years; and the matrix interior plus `Ausland` plus `ohne Angabe`
+must equal the `Insgesamt` column.
+
 
 ## References
 

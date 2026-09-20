@@ -1,0 +1,911 @@
+origin,destination,first_years,year,o,d,o_charging,o_ever,d_charging,d_ever,shares_border,bucket
+Bayern,Berlin,343,2003,09,11,0,1,0,0,0,"never-fee, distant"
+Bayern,Brandenburg,81,2003,09,12,0,1,0,0,0,"never-fee, distant"
+Bayern,Bremen,68,2003,09,04,0,1,0,0,0,"never-fee, distant"
+Bayern,Hamburg,162,2003,09,02,0,1,0,1,0,fee state (eventually)
+Bayern,Hessen,867,2003,09,06,0,1,0,1,1,fee state (eventually)
+Bayern,Mecklenburg-Vorpommern,58,2003,09,13,0,1,0,0,0,"never-fee, distant"
+Bayern,Niedersachsen,259,2003,09,03,0,1,0,1,0,fee state (eventually)
+Bayern,Nordrhein-Westfalen,909,2003,09,05,0,1,0,1,0,fee state (eventually)
+Bayern,Rheinland-Pfalz,283,2003,09,07,0,1,0,0,0,"never-fee, distant"
+Bayern,Saarland,44,2003,09,10,0,1,0,1,0,fee state (eventually)
+Bayern,Sachsen,460,2003,09,14,0,1,0,0,1,"never-fee, bordering"
+Bayern,Sachsen-Anhalt,172,2003,09,15,0,1,0,0,0,"never-fee, distant"
+Bayern,Schleswig-Holstein,76,2003,09,01,0,1,0,0,0,"never-fee, distant"
+Berlin,Bayern,196,2003,11,09,0,0,0,1,0,fee state (eventually)
+Berlin,Brandenburg,1770,2003,11,12,0,0,0,0,1,"never-fee, bordering"
+Berlin,Bremen,47,2003,11,04,0,0,0,0,0,"never-fee, distant"
+Berlin,Hamburg,99,2003,11,02,0,0,0,1,0,fee state (eventually)
+Berlin,Hessen,220,2003,11,06,0,0,0,1,0,fee state (eventually)
+Berlin,Mecklenburg-Vorpommern,338,2003,11,13,0,0,0,0,0,"never-fee, distant"
+Berlin,Niedersachsen,185,2003,11,03,0,0,0,1,0,fee state (eventually)
+Berlin,Nordrhein-Westfalen,361,2003,11,05,0,0,0,1,0,fee state (eventually)
+Berlin,Rheinland-Pfalz,60,2003,11,07,0,0,0,0,0,"never-fee, distant"
+Berlin,Saarland,13,2003,11,10,0,0,0,1,0,fee state (eventually)
+Berlin,Sachsen,324,2003,11,14,0,0,0,0,0,"never-fee, distant"
+Berlin,Sachsen-Anhalt,297,2003,11,15,0,0,0,0,0,"never-fee, distant"
+Berlin,Schleswig-Holstein,71,2003,11,01,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Bayern,232,2003,12,09,0,0,0,1,0,fee state (eventually)
+Brandenburg,Berlin,2081,2003,12,11,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Bremen,52,2003,12,04,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Hamburg,156,2003,12,02,0,0,0,1,0,fee state (eventually)
+Brandenburg,Hessen,190,2003,12,06,0,0,0,1,0,fee state (eventually)
+Brandenburg,Mecklenburg-Vorpommern,554,2003,12,13,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Niedersachsen,312,2003,12,03,0,0,0,1,1,fee state (eventually)
+Brandenburg,Nordrhein-Westfalen,289,2003,12,05,0,0,0,1,0,fee state (eventually)
+Brandenburg,Rheinland-Pfalz,55,2003,12,07,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Saarland,18,2003,12,10,0,0,0,1,0,fee state (eventually)
+Brandenburg,Sachsen,1153,2003,12,14,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Sachsen-Anhalt,512,2003,12,15,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Schleswig-Holstein,94,2003,12,01,0,0,0,0,0,"never-fee, distant"
+Bremen,Bayern,43,2003,04,09,0,0,0,1,0,fee state (eventually)
+Bremen,Berlin,67,2003,04,11,0,0,0,0,0,"never-fee, distant"
+Bremen,Brandenburg,8,2003,04,12,0,0,0,0,0,"never-fee, distant"
+Bremen,Hamburg,80,2003,04,02,0,0,0,1,0,fee state (eventually)
+Bremen,Hessen,55,2003,04,06,0,0,0,1,0,fee state (eventually)
+Bremen,Mecklenburg-Vorpommern,22,2003,04,13,0,0,0,0,0,"never-fee, distant"
+Bremen,Niedersachsen,459,2003,04,03,0,0,0,1,1,fee state (eventually)
+Bremen,Nordrhein-Westfalen,181,2003,04,05,0,0,0,1,0,fee state (eventually)
+Bremen,Rheinland-Pfalz,16,2003,04,07,0,0,0,0,0,"never-fee, distant"
+Bremen,Saarland,7,2003,04,10,0,0,0,1,0,fee state (eventually)
+Bremen,Sachsen,28,2003,04,14,0,0,0,0,0,"never-fee, distant"
+Bremen,Sachsen-Anhalt,18,2003,04,15,0,0,0,0,0,"never-fee, distant"
+Bremen,Schleswig-Holstein,81,2003,04,01,0,0,0,0,0,"never-fee, distant"
+Hamburg,Bayern,101,2003,02,09,0,1,0,1,0,fee state (eventually)
+Hamburg,Berlin,103,2003,02,11,0,1,0,0,0,"never-fee, distant"
+Hamburg,Brandenburg,29,2003,02,12,0,1,0,0,0,"never-fee, distant"
+Hamburg,Bremen,97,2003,02,04,0,1,0,0,0,"never-fee, distant"
+Hamburg,Hessen,85,2003,02,06,0,1,0,1,0,fee state (eventually)
+Hamburg,Mecklenburg-Vorpommern,72,2003,02,13,0,1,0,0,0,"never-fee, distant"
+Hamburg,Niedersachsen,451,2003,02,03,0,1,0,1,1,fee state (eventually)
+Hamburg,Nordrhein-Westfalen,225,2003,02,05,0,1,0,1,0,fee state (eventually)
+Hamburg,Rheinland-Pfalz,21,2003,02,07,0,1,0,0,0,"never-fee, distant"
+Hamburg,Saarland,6,2003,02,10,0,1,0,1,0,fee state (eventually)
+Hamburg,Sachsen,41,2003,02,14,0,1,0,0,0,"never-fee, distant"
+Hamburg,Sachsen-Anhalt,39,2003,02,15,0,1,0,0,0,"never-fee, distant"
+Hamburg,Schleswig-Holstein,401,2003,02,01,0,1,0,0,1,"never-fee, bordering"
+Hessen,Bayern,810,2003,06,09,0,1,0,1,1,fee state (eventually)
+Hessen,Berlin,215,2003,06,11,0,1,0,0,0,"never-fee, distant"
+Hessen,Brandenburg,77,2003,06,12,0,1,0,0,0,"never-fee, distant"
+Hessen,Bremen,63,2003,06,04,0,1,0,0,0,"never-fee, distant"
+Hessen,Hamburg,127,2003,06,02,0,1,0,1,0,fee state (eventually)
+Hessen,Mecklenburg-Vorpommern,50,2003,06,13,0,1,0,0,0,"never-fee, distant"
+Hessen,Niedersachsen,647,2003,06,03,0,1,0,1,1,fee state (eventually)
+Hessen,Nordrhein-Westfalen,1204,2003,06,05,0,1,0,1,1,fee state (eventually)
+Hessen,Rheinland-Pfalz,1596,2003,06,07,0,1,0,0,1,"never-fee, bordering"
+Hessen,Saarland,49,2003,06,10,0,1,0,1,0,fee state (eventually)
+Hessen,Sachsen,192,2003,06,14,0,1,0,0,0,"never-fee, distant"
+Hessen,Sachsen-Anhalt,104,2003,06,15,0,1,0,0,0,"never-fee, distant"
+Hessen,Schleswig-Holstein,83,2003,06,01,0,1,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Bayern,87,2003,13,09,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Berlin,471,2003,13,11,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Brandenburg,145,2003,13,12,0,0,0,0,1,"never-fee, bordering"
+Mecklenburg-Vorpommern,Bremen,66,2003,13,04,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Hamburg,320,2003,13,02,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Hessen,94,2003,13,06,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Niedersachsen,350,2003,13,03,0,0,0,1,1,fee state (eventually)
+Mecklenburg-Vorpommern,Nordrhein-Westfalen,195,2003,13,05,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Rheinland-Pfalz,42,2003,13,07,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Saarland,6,2003,13,10,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Sachsen,289,2003,13,14,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Sachsen-Anhalt,127,2003,13,15,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Schleswig-Holstein,304,2003,13,01,0,0,0,0,1,"never-fee, bordering"
+Niedersachsen,Bayern,589,2003,03,09,0,1,0,1,0,fee state (eventually)
+Niedersachsen,Berlin,361,2003,03,11,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Brandenburg,128,2003,03,12,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Bremen,1744,2003,03,04,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Hamburg,900,2003,03,02,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Hessen,977,2003,03,06,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Mecklenburg-Vorpommern,268,2003,03,13,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Nordrhein-Westfalen,2584,2003,03,05,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Rheinland-Pfalz,247,2003,03,07,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Saarland,34,2003,03,10,0,1,0,1,0,fee state (eventually)
+Niedersachsen,Sachsen,314,2003,03,14,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Sachsen-Anhalt,490,2003,03,15,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Schleswig-Holstein,720,2003,03,01,0,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Bayern,1038,2003,05,09,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Berlin,618,2003,05,11,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Brandenburg,155,2003,05,12,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Bremen,272,2003,05,04,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Hamburg,399,2003,05,02,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Hessen,1974,2003,05,06,0,1,0,1,1,fee state (eventually)
+Nordrhein-Westfalen,Mecklenburg-Vorpommern,168,2003,05,13,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Niedersachsen,2306,2003,05,03,0,1,0,1,1,fee state (eventually)
+Nordrhein-Westfalen,Rheinland-Pfalz,959,2003,05,07,0,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Saarland,156,2003,05,10,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Sachsen,430,2003,05,14,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Sachsen-Anhalt,259,2003,05,15,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Schleswig-Holstein,297,2003,05,01,0,1,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bayern,273,2003,07,09,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Berlin,83,2003,07,11,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Brandenburg,24,2003,07,12,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bremen,24,2003,07,04,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Hamburg,69,2003,07,02,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Hessen,965,2003,07,06,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Mecklenburg-Vorpommern,27,2003,07,13,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Niedersachsen,138,2003,07,03,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Nordrhein-Westfalen,1207,2003,07,05,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Saarland,302,2003,07,10,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Sachsen,77,2003,07,14,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Sachsen-Anhalt,45,2003,07,15,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Schleswig-Holstein,33,2003,07,01,0,0,0,0,0,"never-fee, distant"
+Saarland,Bayern,71,2003,10,09,0,1,0,1,0,fee state (eventually)
+Saarland,Berlin,19,2003,10,11,0,1,0,0,0,"never-fee, distant"
+Saarland,Brandenburg,6,2003,10,12,0,1,0,0,0,"never-fee, distant"
+Saarland,Bremen,6,2003,10,04,0,1,0,0,0,"never-fee, distant"
+Saarland,Hamburg,16,2003,10,02,0,1,0,1,0,fee state (eventually)
+Saarland,Hessen,94,2003,10,06,0,1,0,1,0,fee state (eventually)
+Saarland,Mecklenburg-Vorpommern,3,2003,10,13,0,1,0,0,0,"never-fee, distant"
+Saarland,Niedersachsen,20,2003,10,03,0,1,0,1,0,fee state (eventually)
+Saarland,Nordrhein-Westfalen,185,2003,10,05,0,1,0,1,0,fee state (eventually)
+Saarland,Rheinland-Pfalz,924,2003,10,07,0,1,0,0,1,"never-fee, bordering"
+Saarland,Sachsen,14,2003,10,14,0,1,0,0,0,"never-fee, distant"
+Saarland,Sachsen-Anhalt,15,2003,10,15,0,1,0,0,0,"never-fee, distant"
+Saarland,Schleswig-Holstein,3,2003,10,01,0,1,0,0,0,"never-fee, distant"
+Sachsen,Bayern,717,2003,14,09,0,0,0,1,1,fee state (eventually)
+Sachsen,Berlin,272,2003,14,11,0,0,0,0,0,"never-fee, distant"
+Sachsen,Brandenburg,290,2003,14,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Bremen,37,2003,14,04,0,0,0,0,0,"never-fee, distant"
+Sachsen,Hamburg,86,2003,14,02,0,0,0,1,0,fee state (eventually)
+Sachsen,Hessen,325,2003,14,06,0,0,0,1,0,fee state (eventually)
+Sachsen,Mecklenburg-Vorpommern,130,2003,14,13,0,0,0,0,0,"never-fee, distant"
+Sachsen,Niedersachsen,198,2003,14,03,0,0,0,1,0,fee state (eventually)
+Sachsen,Nordrhein-Westfalen,328,2003,14,05,0,0,0,1,0,fee state (eventually)
+Sachsen,Rheinland-Pfalz,90,2003,14,07,0,0,0,0,0,"never-fee, distant"
+Sachsen,Saarland,20,2003,14,10,0,0,0,1,0,fee state (eventually)
+Sachsen,Sachsen-Anhalt,990,2003,14,15,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Schleswig-Holstein,50,2003,14,01,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Bayern,186,2003,15,09,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Berlin,322,2003,15,11,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Brandenburg,160,2003,15,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Bremen,39,2003,15,04,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Hamburg,113,2003,15,02,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Hessen,214,2003,15,06,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Mecklenburg-Vorpommern,129,2003,15,13,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Niedersachsen,647,2003,15,03,0,0,0,1,1,fee state (eventually)
+Sachsen-Anhalt,Nordrhein-Westfalen,272,2003,15,05,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Rheinland-Pfalz,43,2003,15,07,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Saarland,13,2003,15,10,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Sachsen,1206,2003,15,14,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Schleswig-Holstein,51,2003,15,01,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bayern,188,2003,01,09,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Berlin,117,2003,01,11,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Brandenburg,39,2003,01,12,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bremen,154,2003,01,04,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Hamburg,1102,2003,01,02,0,0,0,1,1,fee state (eventually)
+Schleswig-Holstein,Hessen,202,2003,01,06,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Mecklenburg-Vorpommern,236,2003,01,13,0,0,0,0,1,"never-fee, bordering"
+Schleswig-Holstein,Niedersachsen,641,2003,01,03,0,0,0,1,1,fee state (eventually)
+Schleswig-Holstein,Nordrhein-Westfalen,391,2003,01,05,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Rheinland-Pfalz,72,2003,01,07,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Saarland,10,2003,01,10,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Sachsen,94,2003,01,14,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Sachsen-Anhalt,58,2003,01,15,0,0,0,0,0,"never-fee, distant"
+Bayern,Berlin,330,2004,09,11,0,1,0,0,0,"never-fee, distant"
+Bayern,Brandenburg,73,2004,09,12,0,1,0,0,0,"never-fee, distant"
+Bayern,Bremen,49,2004,09,04,0,1,0,0,0,"never-fee, distant"
+Bayern,Hamburg,253,2004,09,02,0,1,0,1,0,fee state (eventually)
+Bayern,Hessen,832,2004,09,06,0,1,0,1,1,fee state (eventually)
+Bayern,Mecklenburg-Vorpommern,66,2004,09,13,0,1,0,0,0,"never-fee, distant"
+Bayern,Niedersachsen,209,2004,09,03,0,1,0,1,0,fee state (eventually)
+Bayern,Nordrhein-Westfalen,869,2004,09,05,0,1,0,1,0,fee state (eventually)
+Bayern,Rheinland-Pfalz,303,2004,09,07,0,1,0,0,0,"never-fee, distant"
+Bayern,Saarland,31,2004,09,10,0,1,0,1,0,fee state (eventually)
+Bayern,Sachsen,363,2004,09,14,0,1,0,0,1,"never-fee, bordering"
+Bayern,Sachsen-Anhalt,153,2004,09,15,0,1,0,0,0,"never-fee, distant"
+Bayern,Schleswig-Holstein,65,2004,09,01,0,1,0,0,0,"never-fee, distant"
+Berlin,Bayern,264,2004,11,09,0,0,0,1,0,fee state (eventually)
+Berlin,Brandenburg,1665,2004,11,12,0,0,0,0,1,"never-fee, bordering"
+Berlin,Bremen,65,2004,11,04,0,0,0,0,0,"never-fee, distant"
+Berlin,Hamburg,124,2004,11,02,0,0,0,1,0,fee state (eventually)
+Berlin,Hessen,272,2004,11,06,0,0,0,1,0,fee state (eventually)
+Berlin,Mecklenburg-Vorpommern,409,2004,11,13,0,0,0,0,0,"never-fee, distant"
+Berlin,Niedersachsen,187,2004,11,03,0,0,0,1,0,fee state (eventually)
+Berlin,Nordrhein-Westfalen,348,2004,11,05,0,0,0,1,0,fee state (eventually)
+Berlin,Rheinland-Pfalz,64,2004,11,07,0,0,0,0,0,"never-fee, distant"
+Berlin,Saarland,27,2004,11,10,0,0,0,1,0,fee state (eventually)
+Berlin,Sachsen,313,2004,11,14,0,0,0,0,0,"never-fee, distant"
+Berlin,Sachsen-Anhalt,261,2004,11,15,0,0,0,0,0,"never-fee, distant"
+Berlin,Schleswig-Holstein,91,2004,11,01,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Bayern,275,2004,12,09,0,0,0,1,0,fee state (eventually)
+Brandenburg,Berlin,1797,2004,12,11,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Bremen,55,2004,12,04,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Hamburg,102,2004,12,02,0,0,0,1,0,fee state (eventually)
+Brandenburg,Hessen,224,2004,12,06,0,0,0,1,0,fee state (eventually)
+Brandenburg,Mecklenburg-Vorpommern,624,2004,12,13,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Niedersachsen,319,2004,12,03,0,0,0,1,1,fee state (eventually)
+Brandenburg,Nordrhein-Westfalen,330,2004,12,05,0,0,0,1,0,fee state (eventually)
+Brandenburg,Rheinland-Pfalz,66,2004,12,07,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Saarland,12,2004,12,10,0,0,0,1,0,fee state (eventually)
+Brandenburg,Sachsen,993,2004,12,14,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Sachsen-Anhalt,528,2004,12,15,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Schleswig-Holstein,109,2004,12,01,0,0,0,0,0,"never-fee, distant"
+Bremen,Bayern,41,2004,04,09,0,0,0,1,0,fee state (eventually)
+Bremen,Berlin,58,2004,04,11,0,0,0,0,0,"never-fee, distant"
+Bremen,Brandenburg,14,2004,04,12,0,0,0,0,0,"never-fee, distant"
+Bremen,Hamburg,77,2004,04,02,0,0,0,1,0,fee state (eventually)
+Bremen,Hessen,51,2004,04,06,0,0,0,1,0,fee state (eventually)
+Bremen,Mecklenburg-Vorpommern,18,2004,04,13,0,0,0,0,0,"never-fee, distant"
+Bremen,Niedersachsen,357,2004,04,03,0,0,0,1,1,fee state (eventually)
+Bremen,Nordrhein-Westfalen,153,2004,04,05,0,0,0,1,0,fee state (eventually)
+Bremen,Rheinland-Pfalz,19,2004,04,07,0,0,0,0,0,"never-fee, distant"
+Bremen,Saarland,6,2004,04,10,0,0,0,1,0,fee state (eventually)
+Bremen,Sachsen,24,2004,04,14,0,0,0,0,0,"never-fee, distant"
+Bremen,Sachsen-Anhalt,12,2004,04,15,0,0,0,0,0,"never-fee, distant"
+Bremen,Schleswig-Holstein,66,2004,04,01,0,0,0,0,0,"never-fee, distant"
+Hamburg,Bayern,105,2004,02,09,0,1,0,1,0,fee state (eventually)
+Hamburg,Berlin,92,2004,02,11,0,1,0,0,0,"never-fee, distant"
+Hamburg,Brandenburg,23,2004,02,12,0,1,0,0,0,"never-fee, distant"
+Hamburg,Bremen,90,2004,02,04,0,1,0,0,0,"never-fee, distant"
+Hamburg,Hessen,99,2004,02,06,0,1,0,1,0,fee state (eventually)
+Hamburg,Mecklenburg-Vorpommern,94,2004,02,13,0,1,0,0,0,"never-fee, distant"
+Hamburg,Niedersachsen,364,2004,02,03,0,1,0,1,1,fee state (eventually)
+Hamburg,Nordrhein-Westfalen,235,2004,02,05,0,1,0,1,0,fee state (eventually)
+Hamburg,Rheinland-Pfalz,37,2004,02,07,0,1,0,0,0,"never-fee, distant"
+Hamburg,Saarland,10,2004,02,10,0,1,0,1,0,fee state (eventually)
+Hamburg,Sachsen,47,2004,02,14,0,1,0,0,0,"never-fee, distant"
+Hamburg,Sachsen-Anhalt,25,2004,02,15,0,1,0,0,0,"never-fee, distant"
+Hamburg,Schleswig-Holstein,368,2004,02,01,0,1,0,0,1,"never-fee, bordering"
+Hessen,Bayern,840,2004,06,09,0,1,0,1,1,fee state (eventually)
+Hessen,Berlin,183,2004,06,11,0,1,0,0,0,"never-fee, distant"
+Hessen,Brandenburg,54,2004,06,12,0,1,0,0,0,"never-fee, distant"
+Hessen,Bremen,68,2004,06,04,0,1,0,0,0,"never-fee, distant"
+Hessen,Hamburg,134,2004,06,02,0,1,0,1,0,fee state (eventually)
+Hessen,Mecklenburg-Vorpommern,45,2004,06,13,0,1,0,0,0,"never-fee, distant"
+Hessen,Niedersachsen,540,2004,06,03,0,1,0,1,1,fee state (eventually)
+Hessen,Nordrhein-Westfalen,1142,2004,06,05,0,1,0,1,1,fee state (eventually)
+Hessen,Rheinland-Pfalz,1638,2004,06,07,0,1,0,0,1,"never-fee, bordering"
+Hessen,Saarland,46,2004,06,10,0,1,0,1,0,fee state (eventually)
+Hessen,Sachsen,135,2004,06,14,0,1,0,0,0,"never-fee, distant"
+Hessen,Sachsen-Anhalt,94,2004,06,15,0,1,0,0,0,"never-fee, distant"
+Hessen,Schleswig-Holstein,78,2004,06,01,0,1,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Bayern,115,2004,13,09,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Berlin,345,2004,13,11,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Brandenburg,143,2004,13,12,0,0,0,0,1,"never-fee, bordering"
+Mecklenburg-Vorpommern,Bremen,93,2004,13,04,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Hamburg,202,2004,13,02,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Hessen,102,2004,13,06,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Niedersachsen,338,2004,13,03,0,0,0,1,1,fee state (eventually)
+Mecklenburg-Vorpommern,Nordrhein-Westfalen,217,2004,13,05,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Rheinland-Pfalz,30,2004,13,07,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Saarland,8,2004,13,10,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Sachsen,259,2004,13,14,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Sachsen-Anhalt,111,2004,13,15,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Schleswig-Holstein,318,2004,13,01,0,0,0,0,1,"never-fee, bordering"
+Niedersachsen,Bayern,642,2004,03,09,0,1,0,1,0,fee state (eventually)
+Niedersachsen,Berlin,360,2004,03,11,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Brandenburg,112,2004,03,12,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Bremen,1766,2004,03,04,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Hamburg,809,2004,03,02,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Hessen,988,2004,03,06,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Mecklenburg-Vorpommern,286,2004,03,13,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Nordrhein-Westfalen,2898,2004,03,05,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Rheinland-Pfalz,269,2004,03,07,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Saarland,43,2004,03,10,0,1,0,1,0,fee state (eventually)
+Niedersachsen,Sachsen,286,2004,03,14,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Sachsen-Anhalt,455,2004,03,15,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Schleswig-Holstein,638,2004,03,01,0,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Bayern,1071,2004,05,09,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Berlin,543,2004,05,11,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Brandenburg,142,2004,05,12,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Bremen,295,2004,05,04,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Hamburg,455,2004,05,02,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Hessen,1661,2004,05,06,0,1,0,1,1,fee state (eventually)
+Nordrhein-Westfalen,Mecklenburg-Vorpommern,175,2004,05,13,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Niedersachsen,2161,2004,05,03,0,1,0,1,1,fee state (eventually)
+Nordrhein-Westfalen,Rheinland-Pfalz,1040,2004,05,07,0,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Saarland,75,2004,05,10,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Sachsen,315,2004,05,14,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Sachsen-Anhalt,196,2004,05,15,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Schleswig-Holstein,249,2004,05,01,0,1,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bayern,351,2004,07,09,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Berlin,70,2004,07,11,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Brandenburg,23,2004,07,12,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bremen,23,2004,07,04,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Hamburg,66,2004,07,02,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Hessen,1036,2004,07,06,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Mecklenburg-Vorpommern,25,2004,07,13,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Niedersachsen,94,2004,07,03,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Nordrhein-Westfalen,1306,2004,07,05,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Saarland,284,2004,07,10,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Sachsen,69,2004,07,14,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Sachsen-Anhalt,34,2004,07,15,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Schleswig-Holstein,22,2004,07,01,0,0,0,0,0,"never-fee, distant"
+Saarland,Bayern,58,2004,10,09,0,1,0,1,0,fee state (eventually)
+Saarland,Berlin,27,2004,10,11,0,1,0,0,0,"never-fee, distant"
+Saarland,Brandenburg,2,2004,10,12,0,1,0,0,0,"never-fee, distant"
+Saarland,Bremen,3,2004,10,04,0,1,0,0,0,"never-fee, distant"
+Saarland,Hamburg,15,2004,10,02,0,1,0,1,0,fee state (eventually)
+Saarland,Hessen,121,2004,10,06,0,1,0,1,0,fee state (eventually)
+Saarland,Mecklenburg-Vorpommern,5,2004,10,13,0,1,0,0,0,"never-fee, distant"
+Saarland,Niedersachsen,25,2004,10,03,0,1,0,1,0,fee state (eventually)
+Saarland,Nordrhein-Westfalen,137,2004,10,05,0,1,0,1,0,fee state (eventually)
+Saarland,Rheinland-Pfalz,1052,2004,10,07,0,1,0,0,1,"never-fee, bordering"
+Saarland,Sachsen,14,2004,10,14,0,1,0,0,0,"never-fee, distant"
+Saarland,Sachsen-Anhalt,9,2004,10,15,0,1,0,0,0,"never-fee, distant"
+Saarland,Schleswig-Holstein,1,2004,10,01,0,1,0,0,0,"never-fee, distant"
+Sachsen,Bayern,812,2004,14,09,0,0,0,1,1,fee state (eventually)
+Sachsen,Berlin,288,2004,14,11,0,0,0,0,0,"never-fee, distant"
+Sachsen,Brandenburg,319,2004,14,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Bremen,32,2004,14,04,0,0,0,0,0,"never-fee, distant"
+Sachsen,Hamburg,88,2004,14,02,0,0,0,1,0,fee state (eventually)
+Sachsen,Hessen,313,2004,14,06,0,0,0,1,0,fee state (eventually)
+Sachsen,Mecklenburg-Vorpommern,169,2004,14,13,0,0,0,0,0,"never-fee, distant"
+Sachsen,Niedersachsen,203,2004,14,03,0,0,0,1,0,fee state (eventually)
+Sachsen,Nordrhein-Westfalen,360,2004,14,05,0,0,0,1,0,fee state (eventually)
+Sachsen,Rheinland-Pfalz,73,2004,14,07,0,0,0,0,0,"never-fee, distant"
+Sachsen,Saarland,27,2004,14,10,0,0,0,1,0,fee state (eventually)
+Sachsen,Sachsen-Anhalt,939,2004,14,15,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Schleswig-Holstein,42,2004,14,01,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Bayern,211,2004,15,09,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Berlin,278,2004,15,11,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Brandenburg,195,2004,15,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Bremen,44,2004,15,04,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Hamburg,98,2004,15,02,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Hessen,189,2004,15,06,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Mecklenburg-Vorpommern,147,2004,15,13,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Niedersachsen,595,2004,15,03,0,0,0,1,1,fee state (eventually)
+Sachsen-Anhalt,Nordrhein-Westfalen,321,2004,15,05,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Rheinland-Pfalz,53,2004,15,07,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Saarland,9,2004,15,10,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Sachsen,1109,2004,15,14,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Schleswig-Holstein,65,2004,15,01,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bayern,192,2004,01,09,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Berlin,127,2004,01,11,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Brandenburg,37,2004,01,12,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bremen,167,2004,01,04,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Hamburg,1012,2004,01,02,0,0,0,1,1,fee state (eventually)
+Schleswig-Holstein,Hessen,171,2004,01,06,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Mecklenburg-Vorpommern,233,2004,01,13,0,0,0,0,1,"never-fee, bordering"
+Schleswig-Holstein,Niedersachsen,578,2004,01,03,0,0,0,1,1,fee state (eventually)
+Schleswig-Holstein,Nordrhein-Westfalen,351,2004,01,05,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Rheinland-Pfalz,77,2004,01,07,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Saarland,16,2004,01,10,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Sachsen,75,2004,01,14,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Sachsen-Anhalt,75,2004,01,15,0,0,0,0,0,"never-fee, distant"
+Bayern,Berlin,336,2005,09,11,0,1,0,0,0,"never-fee, distant"
+Bayern,Brandenburg,60,2005,09,12,0,1,0,0,0,"never-fee, distant"
+Bayern,Bremen,58,2005,09,04,0,1,0,0,0,"never-fee, distant"
+Bayern,Hamburg,255,2005,09,02,0,1,0,1,0,fee state (eventually)
+Bayern,Hessen,901,2005,09,06,0,1,0,1,1,fee state (eventually)
+Bayern,Mecklenburg-Vorpommern,42,2005,09,13,0,1,0,0,0,"never-fee, distant"
+Bayern,Niedersachsen,238,2005,09,03,0,1,0,1,0,fee state (eventually)
+Bayern,Nordrhein-Westfalen,856,2005,09,05,0,1,0,1,0,fee state (eventually)
+Bayern,Rheinland-Pfalz,223,2005,09,07,0,1,0,0,0,"never-fee, distant"
+Bayern,Saarland,52,2005,09,10,0,1,0,1,0,fee state (eventually)
+Bayern,Sachsen,330,2005,09,14,0,1,0,0,1,"never-fee, bordering"
+Bayern,Sachsen-Anhalt,116,2005,09,15,0,1,0,0,0,"never-fee, distant"
+Bayern,Schleswig-Holstein,71,2005,09,01,0,1,0,0,0,"never-fee, distant"
+Berlin,Bayern,293,2005,11,09,0,0,0,1,0,fee state (eventually)
+Berlin,Brandenburg,1688,2005,11,12,0,0,0,0,1,"never-fee, bordering"
+Berlin,Bremen,63,2005,11,04,0,0,0,0,0,"never-fee, distant"
+Berlin,Hamburg,127,2005,11,02,0,0,0,1,0,fee state (eventually)
+Berlin,Hessen,245,2005,11,06,0,0,0,1,0,fee state (eventually)
+Berlin,Mecklenburg-Vorpommern,304,2005,11,13,0,0,0,0,0,"never-fee, distant"
+Berlin,Niedersachsen,194,2005,11,03,0,0,0,1,0,fee state (eventually)
+Berlin,Nordrhein-Westfalen,466,2005,11,05,0,0,0,1,0,fee state (eventually)
+Berlin,Rheinland-Pfalz,67,2005,11,07,0,0,0,0,0,"never-fee, distant"
+Berlin,Saarland,24,2005,11,10,0,0,0,1,0,fee state (eventually)
+Berlin,Sachsen,342,2005,11,14,0,0,0,0,0,"never-fee, distant"
+Berlin,Sachsen-Anhalt,159,2005,11,15,0,0,0,0,0,"never-fee, distant"
+Berlin,Schleswig-Holstein,100,2005,11,01,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Bayern,261,2005,12,09,0,0,0,1,0,fee state (eventually)
+Brandenburg,Berlin,1888,2005,12,11,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Bremen,47,2005,12,04,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Hamburg,126,2005,12,02,0,0,0,1,0,fee state (eventually)
+Brandenburg,Hessen,213,2005,12,06,0,0,0,1,0,fee state (eventually)
+Brandenburg,Mecklenburg-Vorpommern,604,2005,12,13,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Niedersachsen,311,2005,12,03,0,0,0,1,1,fee state (eventually)
+Brandenburg,Nordrhein-Westfalen,353,2005,12,05,0,0,0,1,0,fee state (eventually)
+Brandenburg,Rheinland-Pfalz,62,2005,12,07,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Saarland,16,2005,12,10,0,0,0,1,0,fee state (eventually)
+Brandenburg,Sachsen,1024,2005,12,14,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Sachsen-Anhalt,382,2005,12,15,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Schleswig-Holstein,126,2005,12,01,0,0,0,0,0,"never-fee, distant"
+Bremen,Bayern,38,2005,04,09,0,0,0,1,0,fee state (eventually)
+Bremen,Berlin,58,2005,04,11,0,0,0,0,0,"never-fee, distant"
+Bremen,Brandenburg,11,2005,04,12,0,0,0,0,0,"never-fee, distant"
+Bremen,Hamburg,95,2005,04,02,0,0,0,1,0,fee state (eventually)
+Bremen,Hessen,63,2005,04,06,0,0,0,1,0,fee state (eventually)
+Bremen,Mecklenburg-Vorpommern,22,2005,04,13,0,0,0,0,0,"never-fee, distant"
+Bremen,Niedersachsen,296,2005,04,03,0,0,0,1,1,fee state (eventually)
+Bremen,Nordrhein-Westfalen,177,2005,04,05,0,0,0,1,0,fee state (eventually)
+Bremen,Rheinland-Pfalz,22,2005,04,07,0,0,0,0,0,"never-fee, distant"
+Bremen,Saarland,3,2005,04,10,0,0,0,1,0,fee state (eventually)
+Bremen,Sachsen,26,2005,04,14,0,0,0,0,0,"never-fee, distant"
+Bremen,Sachsen-Anhalt,9,2005,04,15,0,0,0,0,0,"never-fee, distant"
+Bremen,Schleswig-Holstein,53,2005,04,01,0,0,0,0,0,"never-fee, distant"
+Hamburg,Bayern,125,2005,02,09,0,1,0,1,0,fee state (eventually)
+Hamburg,Berlin,105,2005,02,11,0,1,0,0,0,"never-fee, distant"
+Hamburg,Brandenburg,26,2005,02,12,0,1,0,0,0,"never-fee, distant"
+Hamburg,Bremen,104,2005,02,04,0,1,0,0,0,"never-fee, distant"
+Hamburg,Hessen,94,2005,02,06,0,1,0,1,0,fee state (eventually)
+Hamburg,Mecklenburg-Vorpommern,90,2005,02,13,0,1,0,0,0,"never-fee, distant"
+Hamburg,Niedersachsen,448,2005,02,03,0,1,0,1,1,fee state (eventually)
+Hamburg,Nordrhein-Westfalen,241,2005,02,05,0,1,0,1,0,fee state (eventually)
+Hamburg,Rheinland-Pfalz,34,2005,02,07,0,1,0,0,0,"never-fee, distant"
+Hamburg,Saarland,12,2005,02,10,0,1,0,1,0,fee state (eventually)
+Hamburg,Sachsen,72,2005,02,14,0,1,0,0,0,"never-fee, distant"
+Hamburg,Sachsen-Anhalt,22,2005,02,15,0,1,0,0,0,"never-fee, distant"
+Hamburg,Schleswig-Holstein,391,2005,02,01,0,1,0,0,1,"never-fee, bordering"
+Hessen,Bayern,832,2005,06,09,0,1,0,1,1,fee state (eventually)
+Hessen,Berlin,194,2005,06,11,0,1,0,0,0,"never-fee, distant"
+Hessen,Brandenburg,49,2005,06,12,0,1,0,0,0,"never-fee, distant"
+Hessen,Bremen,63,2005,06,04,0,1,0,0,0,"never-fee, distant"
+Hessen,Hamburg,145,2005,06,02,0,1,0,1,0,fee state (eventually)
+Hessen,Mecklenburg-Vorpommern,41,2005,06,13,0,1,0,0,0,"never-fee, distant"
+Hessen,Niedersachsen,512,2005,06,03,0,1,0,1,1,fee state (eventually)
+Hessen,Nordrhein-Westfalen,1178,2005,06,05,0,1,0,1,1,fee state (eventually)
+Hessen,Rheinland-Pfalz,1390,2005,06,07,0,1,0,0,1,"never-fee, bordering"
+Hessen,Saarland,50,2005,06,10,0,1,0,1,0,fee state (eventually)
+Hessen,Sachsen,188,2005,06,14,0,1,0,0,0,"never-fee, distant"
+Hessen,Sachsen-Anhalt,64,2005,06,15,0,1,0,0,0,"never-fee, distant"
+Hessen,Schleswig-Holstein,75,2005,06,01,0,1,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Bayern,119,2005,13,09,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Berlin,408,2005,13,11,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Brandenburg,133,2005,13,12,0,0,0,0,1,"never-fee, bordering"
+Mecklenburg-Vorpommern,Bremen,79,2005,13,04,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Hamburg,289,2005,13,02,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Hessen,131,2005,13,06,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Niedersachsen,312,2005,13,03,0,0,0,1,1,fee state (eventually)
+Mecklenburg-Vorpommern,Nordrhein-Westfalen,259,2005,13,05,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Rheinland-Pfalz,27,2005,13,07,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Saarland,5,2005,13,10,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Sachsen,262,2005,13,14,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Sachsen-Anhalt,93,2005,13,15,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Schleswig-Holstein,361,2005,13,01,0,0,0,0,1,"never-fee, bordering"
+Niedersachsen,Bayern,700,2005,03,09,0,1,0,1,0,fee state (eventually)
+Niedersachsen,Berlin,404,2005,03,11,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Brandenburg,95,2005,03,12,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Bremen,1669,2005,03,04,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Hamburg,870,2005,03,02,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Hessen,1154,2005,03,06,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Mecklenburg-Vorpommern,223,2005,03,13,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Nordrhein-Westfalen,3145,2005,03,05,0,1,0,1,1,fee state (eventually)
+Niedersachsen,Rheinland-Pfalz,226,2005,03,07,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Saarland,45,2005,03,10,0,1,0,1,0,fee state (eventually)
+Niedersachsen,Sachsen,279,2005,03,14,0,1,0,0,0,"never-fee, distant"
+Niedersachsen,Sachsen-Anhalt,357,2005,03,15,0,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Schleswig-Holstein,768,2005,03,01,0,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Bayern,1120,2005,05,09,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Berlin,553,2005,05,11,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Brandenburg,115,2005,05,12,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Bremen,268,2005,05,04,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Hamburg,479,2005,05,02,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Hessen,1662,2005,05,06,0,1,0,1,1,fee state (eventually)
+Nordrhein-Westfalen,Mecklenburg-Vorpommern,136,2005,05,13,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Niedersachsen,2031,2005,05,03,0,1,0,1,1,fee state (eventually)
+Nordrhein-Westfalen,Rheinland-Pfalz,933,2005,05,07,0,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Saarland,104,2005,05,10,0,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Sachsen,330,2005,05,14,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Sachsen-Anhalt,141,2005,05,15,0,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Schleswig-Holstein,262,2005,05,01,0,1,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bayern,320,2005,07,09,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Berlin,70,2005,07,11,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Brandenburg,13,2005,07,12,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bremen,23,2005,07,04,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Hamburg,70,2005,07,02,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Hessen,1079,2005,07,06,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Mecklenburg-Vorpommern,24,2005,07,13,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Niedersachsen,111,2005,07,03,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Nordrhein-Westfalen,1262,2005,07,05,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Saarland,259,2005,07,10,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Sachsen,64,2005,07,14,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Sachsen-Anhalt,34,2005,07,15,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Schleswig-Holstein,28,2005,07,01,0,0,0,0,0,"never-fee, distant"
+Saarland,Bayern,82,2005,10,09,0,1,0,1,0,fee state (eventually)
+Saarland,Berlin,23,2005,10,11,0,1,0,0,0,"never-fee, distant"
+Saarland,Brandenburg,7,2005,10,12,0,1,0,0,0,"never-fee, distant"
+Saarland,Bremen,2,2005,10,04,0,1,0,0,0,"never-fee, distant"
+Saarland,Hamburg,22,2005,10,02,0,1,0,1,0,fee state (eventually)
+Saarland,Hessen,111,2005,10,06,0,1,0,1,0,fee state (eventually)
+Saarland,Mecklenburg-Vorpommern,4,2005,10,13,0,1,0,0,0,"never-fee, distant"
+Saarland,Niedersachsen,16,2005,10,03,0,1,0,1,0,fee state (eventually)
+Saarland,Nordrhein-Westfalen,155,2005,10,05,0,1,0,1,0,fee state (eventually)
+Saarland,Rheinland-Pfalz,1130,2005,10,07,0,1,0,0,1,"never-fee, bordering"
+Saarland,Sachsen,11,2005,10,14,0,1,0,0,0,"never-fee, distant"
+Saarland,Sachsen-Anhalt,6,2005,10,15,0,1,0,0,0,"never-fee, distant"
+Saarland,Schleswig-Holstein,5,2005,10,01,0,1,0,0,0,"never-fee, distant"
+Sachsen,Bayern,831,2005,14,09,0,0,0,1,1,fee state (eventually)
+Sachsen,Berlin,311,2005,14,11,0,0,0,0,0,"never-fee, distant"
+Sachsen,Brandenburg,313,2005,14,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Bremen,25,2005,14,04,0,0,0,0,0,"never-fee, distant"
+Sachsen,Hamburg,104,2005,14,02,0,0,0,1,0,fee state (eventually)
+Sachsen,Hessen,298,2005,14,06,0,0,0,1,0,fee state (eventually)
+Sachsen,Mecklenburg-Vorpommern,146,2005,14,13,0,0,0,0,0,"never-fee, distant"
+Sachsen,Niedersachsen,211,2005,14,03,0,0,0,1,0,fee state (eventually)
+Sachsen,Nordrhein-Westfalen,367,2005,14,05,0,0,0,1,0,fee state (eventually)
+Sachsen,Rheinland-Pfalz,89,2005,14,07,0,0,0,0,0,"never-fee, distant"
+Sachsen,Saarland,19,2005,14,10,0,0,0,1,0,fee state (eventually)
+Sachsen,Sachsen-Anhalt,743,2005,14,15,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Schleswig-Holstein,61,2005,14,01,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Bayern,232,2005,15,09,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Berlin,334,2005,15,11,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Brandenburg,174,2005,15,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Bremen,41,2005,15,04,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Hamburg,102,2005,15,02,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Hessen,287,2005,15,06,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Mecklenburg-Vorpommern,125,2005,15,13,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Niedersachsen,623,2005,15,03,0,0,0,1,1,fee state (eventually)
+Sachsen-Anhalt,Nordrhein-Westfalen,319,2005,15,05,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Rheinland-Pfalz,53,2005,15,07,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Saarland,6,2005,15,10,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Sachsen,1187,2005,15,14,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Schleswig-Holstein,76,2005,15,01,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bayern,232,2005,01,09,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Berlin,133,2005,01,11,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Brandenburg,41,2005,01,12,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bremen,148,2005,01,04,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Hamburg,973,2005,01,02,0,0,0,1,1,fee state (eventually)
+Schleswig-Holstein,Hessen,208,2005,01,06,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Mecklenburg-Vorpommern,167,2005,01,13,0,0,0,0,1,"never-fee, bordering"
+Schleswig-Holstein,Niedersachsen,660,2005,01,03,0,0,0,1,1,fee state (eventually)
+Schleswig-Holstein,Nordrhein-Westfalen,448,2005,01,05,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Rheinland-Pfalz,77,2005,01,07,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Saarland,17,2005,01,10,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Sachsen,78,2005,01,14,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Sachsen-Anhalt,43,2005,01,15,0,0,0,0,0,"never-fee, distant"
+Bayern,Berlin,447,2006,09,11,0,1,0,0,0,"never-fee, distant"
+Bayern,Brandenburg,68,2006,09,12,0,1,0,0,0,"never-fee, distant"
+Bayern,Bremen,66,2006,09,04,0,1,0,0,0,"never-fee, distant"
+Bayern,Hamburg,232,2006,09,02,0,1,0,1,0,fee state (eventually)
+Bayern,Hessen,833,2006,09,06,0,1,0,1,1,fee state (eventually)
+Bayern,Mecklenburg-Vorpommern,67,2006,09,13,0,1,0,0,0,"never-fee, distant"
+Bayern,Niedersachsen,240,2006,09,03,0,1,1,1,0,fee state (eventually)
+Bayern,Nordrhein-Westfalen,774,2006,09,05,0,1,1,1,0,fee state (eventually)
+Bayern,Rheinland-Pfalz,250,2006,09,07,0,1,0,0,0,"never-fee, distant"
+Bayern,Saarland,54,2006,09,10,0,1,0,1,0,fee state (eventually)
+Bayern,Sachsen,350,2006,09,14,0,1,0,0,1,"never-fee, bordering"
+Bayern,Sachsen-Anhalt,97,2006,09,15,0,1,0,0,0,"never-fee, distant"
+Bayern,Schleswig-Holstein,58,2006,09,01,0,1,0,0,0,"never-fee, distant"
+Berlin,Bayern,320,2006,11,09,0,0,0,1,0,fee state (eventually)
+Berlin,Brandenburg,1786,2006,11,12,0,0,0,0,1,"never-fee, bordering"
+Berlin,Bremen,55,2006,11,04,0,0,0,0,0,"never-fee, distant"
+Berlin,Hamburg,144,2006,11,02,0,0,0,1,0,fee state (eventually)
+Berlin,Hessen,228,2006,11,06,0,0,0,1,0,fee state (eventually)
+Berlin,Mecklenburg-Vorpommern,340,2006,11,13,0,0,0,0,0,"never-fee, distant"
+Berlin,Niedersachsen,201,2006,11,03,0,0,1,1,0,fee state (eventually)
+Berlin,Nordrhein-Westfalen,450,2006,11,05,0,0,1,1,0,fee state (eventually)
+Berlin,Rheinland-Pfalz,89,2006,11,07,0,0,0,0,0,"never-fee, distant"
+Berlin,Saarland,12,2006,11,10,0,0,0,1,0,fee state (eventually)
+Berlin,Sachsen,307,2006,11,14,0,0,0,0,0,"never-fee, distant"
+Berlin,Sachsen-Anhalt,158,2006,11,15,0,0,0,0,0,"never-fee, distant"
+Berlin,Schleswig-Holstein,101,2006,11,01,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Bayern,251,2006,12,09,0,0,0,1,0,fee state (eventually)
+Brandenburg,Berlin,1902,2006,12,11,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Bremen,51,2006,12,04,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Hamburg,126,2006,12,02,0,0,0,1,0,fee state (eventually)
+Brandenburg,Hessen,190,2006,12,06,0,0,0,1,0,fee state (eventually)
+Brandenburg,Mecklenburg-Vorpommern,610,2006,12,13,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Niedersachsen,259,2006,12,03,0,0,1,1,1,fee state (eventually)
+Brandenburg,Nordrhein-Westfalen,310,2006,12,05,0,0,1,1,0,fee state (eventually)
+Brandenburg,Rheinland-Pfalz,68,2006,12,07,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Saarland,11,2006,12,10,0,0,0,1,0,fee state (eventually)
+Brandenburg,Sachsen,949,2006,12,14,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Sachsen-Anhalt,345,2006,12,15,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Schleswig-Holstein,148,2006,12,01,0,0,0,0,0,"never-fee, distant"
+Bremen,Bayern,53,2006,04,09,0,0,0,1,0,fee state (eventually)
+Bremen,Berlin,62,2006,04,11,0,0,0,0,0,"never-fee, distant"
+Bremen,Brandenburg,13,2006,04,12,0,0,0,0,0,"never-fee, distant"
+Bremen,Hamburg,88,2006,04,02,0,0,0,1,0,fee state (eventually)
+Bremen,Hessen,49,2006,04,06,0,0,0,1,0,fee state (eventually)
+Bremen,Mecklenburg-Vorpommern,14,2006,04,13,0,0,0,0,0,"never-fee, distant"
+Bremen,Niedersachsen,346,2006,04,03,0,0,1,1,1,fee state (eventually)
+Bremen,Nordrhein-Westfalen,196,2006,04,05,0,0,1,1,0,fee state (eventually)
+Bremen,Rheinland-Pfalz,18,2006,04,07,0,0,0,0,0,"never-fee, distant"
+Bremen,Saarland,7,2006,04,10,0,0,0,1,0,fee state (eventually)
+Bremen,Sachsen,27,2006,04,14,0,0,0,0,0,"never-fee, distant"
+Bremen,Sachsen-Anhalt,18,2006,04,15,0,0,0,0,0,"never-fee, distant"
+Bremen,Schleswig-Holstein,72,2006,04,01,0,0,0,0,0,"never-fee, distant"
+Hamburg,Bayern,139,2006,02,09,0,1,0,1,0,fee state (eventually)
+Hamburg,Berlin,126,2006,02,11,0,1,0,0,0,"never-fee, distant"
+Hamburg,Brandenburg,38,2006,02,12,0,1,0,0,0,"never-fee, distant"
+Hamburg,Bremen,96,2006,02,04,0,1,0,0,0,"never-fee, distant"
+Hamburg,Hessen,76,2006,02,06,0,1,0,1,0,fee state (eventually)
+Hamburg,Mecklenburg-Vorpommern,70,2006,02,13,0,1,0,0,0,"never-fee, distant"
+Hamburg,Niedersachsen,475,2006,02,03,0,1,1,1,1,fee state (eventually)
+Hamburg,Nordrhein-Westfalen,254,2006,02,05,0,1,1,1,0,fee state (eventually)
+Hamburg,Rheinland-Pfalz,32,2006,02,07,0,1,0,0,0,"never-fee, distant"
+Hamburg,Saarland,5,2006,02,10,0,1,0,1,0,fee state (eventually)
+Hamburg,Sachsen,57,2006,02,14,0,1,0,0,0,"never-fee, distant"
+Hamburg,Sachsen-Anhalt,21,2006,02,15,0,1,0,0,0,"never-fee, distant"
+Hamburg,Schleswig-Holstein,403,2006,02,01,0,1,0,0,1,"never-fee, bordering"
+Hessen,Bayern,1046,2006,06,09,0,1,0,1,1,fee state (eventually)
+Hessen,Berlin,215,2006,06,11,0,1,0,0,0,"never-fee, distant"
+Hessen,Brandenburg,39,2006,06,12,0,1,0,0,0,"never-fee, distant"
+Hessen,Bremen,59,2006,06,04,0,1,0,0,0,"never-fee, distant"
+Hessen,Hamburg,154,2006,06,02,0,1,0,1,0,fee state (eventually)
+Hessen,Mecklenburg-Vorpommern,45,2006,06,13,0,1,0,0,0,"never-fee, distant"
+Hessen,Niedersachsen,474,2006,06,03,0,1,1,1,1,fee state (eventually)
+Hessen,Nordrhein-Westfalen,1077,2006,06,05,0,1,1,1,1,fee state (eventually)
+Hessen,Rheinland-Pfalz,1477,2006,06,07,0,1,0,0,1,"never-fee, bordering"
+Hessen,Saarland,37,2006,06,10,0,1,0,1,0,fee state (eventually)
+Hessen,Sachsen,147,2006,06,14,0,1,0,0,0,"never-fee, distant"
+Hessen,Sachsen-Anhalt,72,2006,06,15,0,1,0,0,0,"never-fee, distant"
+Hessen,Schleswig-Holstein,89,2006,06,01,0,1,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Bayern,138,2006,13,09,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Berlin,473,2006,13,11,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Brandenburg,153,2006,13,12,0,0,0,0,1,"never-fee, bordering"
+Mecklenburg-Vorpommern,Bremen,88,2006,13,04,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Hamburg,251,2006,13,02,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Hessen,100,2006,13,06,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Niedersachsen,292,2006,13,03,0,0,1,1,1,fee state (eventually)
+Mecklenburg-Vorpommern,Nordrhein-Westfalen,229,2006,13,05,0,0,1,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Rheinland-Pfalz,31,2006,13,07,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Saarland,8,2006,13,10,0,0,0,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Sachsen,261,2006,13,14,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Sachsen-Anhalt,130,2006,13,15,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Schleswig-Holstein,350,2006,13,01,0,0,0,0,1,"never-fee, bordering"
+Niedersachsen,Bayern,690,2006,03,09,1,1,0,1,0,fee state (eventually)
+Niedersachsen,Berlin,422,2006,03,11,1,1,0,0,0,"never-fee, distant"
+Niedersachsen,Brandenburg,130,2006,03,12,1,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Bremen,1404,2006,03,04,1,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Hamburg,909,2006,03,02,1,1,0,1,1,fee state (eventually)
+Niedersachsen,Hessen,984,2006,03,06,1,1,0,1,1,fee state (eventually)
+Niedersachsen,Mecklenburg-Vorpommern,227,2006,03,13,1,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Nordrhein-Westfalen,2809,2006,03,05,1,1,1,1,1,fee state (eventually)
+Niedersachsen,Rheinland-Pfalz,242,2006,03,07,1,1,0,0,0,"never-fee, distant"
+Niedersachsen,Saarland,46,2006,03,10,1,1,0,1,0,fee state (eventually)
+Niedersachsen,Sachsen,265,2006,03,14,1,1,0,0,0,"never-fee, distant"
+Niedersachsen,Sachsen-Anhalt,411,2006,03,15,1,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Schleswig-Holstein,748,2006,03,01,1,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Bayern,1280,2006,05,09,1,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Berlin,596,2006,05,11,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Brandenburg,122,2006,05,12,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Bremen,282,2006,05,04,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Hamburg,451,2006,05,02,1,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Hessen,1576,2006,05,06,1,1,0,1,1,fee state (eventually)
+Nordrhein-Westfalen,Mecklenburg-Vorpommern,170,2006,05,13,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Niedersachsen,2293,2006,05,03,1,1,1,1,1,fee state (eventually)
+Nordrhein-Westfalen,Rheinland-Pfalz,860,2006,05,07,1,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Saarland,116,2006,05,10,1,1,0,1,0,fee state (eventually)
+Nordrhein-Westfalen,Sachsen,299,2006,05,14,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Sachsen-Anhalt,157,2006,05,15,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Schleswig-Holstein,273,2006,05,01,1,1,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bayern,362,2006,07,09,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Berlin,97,2006,07,11,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Brandenburg,19,2006,07,12,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bremen,14,2006,07,04,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Hamburg,66,2006,07,02,0,0,0,1,0,fee state (eventually)
+Rheinland-Pfalz,Hessen,969,2006,07,06,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Mecklenburg-Vorpommern,37,2006,07,13,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Niedersachsen,108,2006,07,03,0,0,1,1,0,fee state (eventually)
+Rheinland-Pfalz,Nordrhein-Westfalen,1141,2006,07,05,0,0,1,1,1,fee state (eventually)
+Rheinland-Pfalz,Saarland,298,2006,07,10,0,0,0,1,1,fee state (eventually)
+Rheinland-Pfalz,Sachsen,70,2006,07,14,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Sachsen-Anhalt,29,2006,07,15,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Schleswig-Holstein,26,2006,07,01,0,0,0,0,0,"never-fee, distant"
+Saarland,Bayern,90,2006,10,09,0,1,0,1,0,fee state (eventually)
+Saarland,Berlin,23,2006,10,11,0,1,0,0,0,"never-fee, distant"
+Saarland,Brandenburg,4,2006,10,12,0,1,0,0,0,"never-fee, distant"
+Saarland,Bremen,11,2006,10,04,0,1,0,0,0,"never-fee, distant"
+Saarland,Hamburg,11,2006,10,02,0,1,0,1,0,fee state (eventually)
+Saarland,Hessen,118,2006,10,06,0,1,0,1,0,fee state (eventually)
+Saarland,Mecklenburg-Vorpommern,4,2006,10,13,0,1,0,0,0,"never-fee, distant"
+Saarland,Niedersachsen,14,2006,10,03,0,1,1,1,0,fee state (eventually)
+Saarland,Nordrhein-Westfalen,149,2006,10,05,0,1,1,1,0,fee state (eventually)
+Saarland,Rheinland-Pfalz,1156,2006,10,07,0,1,0,0,1,"never-fee, bordering"
+Saarland,Sachsen,16,2006,10,14,0,1,0,0,0,"never-fee, distant"
+Saarland,Sachsen-Anhalt,5,2006,10,15,0,1,0,0,0,"never-fee, distant"
+Saarland,Schleswig-Holstein,3,2006,10,01,0,1,0,0,0,"never-fee, distant"
+Sachsen,Bayern,860,2006,14,09,0,0,0,1,1,fee state (eventually)
+Sachsen,Berlin,356,2006,14,11,0,0,0,0,0,"never-fee, distant"
+Sachsen,Brandenburg,401,2006,14,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Bremen,36,2006,14,04,0,0,0,0,0,"never-fee, distant"
+Sachsen,Hamburg,86,2006,14,02,0,0,0,1,0,fee state (eventually)
+Sachsen,Hessen,345,2006,14,06,0,0,0,1,0,fee state (eventually)
+Sachsen,Mecklenburg-Vorpommern,204,2006,14,13,0,0,0,0,0,"never-fee, distant"
+Sachsen,Niedersachsen,154,2006,14,03,0,0,1,1,0,fee state (eventually)
+Sachsen,Nordrhein-Westfalen,323,2006,14,05,0,0,1,1,0,fee state (eventually)
+Sachsen,Rheinland-Pfalz,114,2006,14,07,0,0,0,0,0,"never-fee, distant"
+Sachsen,Saarland,21,2006,14,10,0,0,0,1,0,fee state (eventually)
+Sachsen,Sachsen-Anhalt,930,2006,14,15,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Schleswig-Holstein,61,2006,14,01,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Bayern,288,2006,15,09,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Berlin,378,2006,15,11,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Brandenburg,212,2006,15,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Bremen,40,2006,15,04,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Hamburg,67,2006,15,02,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Hessen,204,2006,15,06,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Mecklenburg-Vorpommern,200,2006,15,13,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Niedersachsen,462,2006,15,03,0,0,1,1,1,fee state (eventually)
+Sachsen-Anhalt,Nordrhein-Westfalen,263,2006,15,05,0,0,1,1,0,fee state (eventually)
+Sachsen-Anhalt,Rheinland-Pfalz,63,2006,15,07,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Saarland,9,2006,15,10,0,0,0,1,0,fee state (eventually)
+Sachsen-Anhalt,Sachsen,1013,2006,15,14,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Schleswig-Holstein,74,2006,15,01,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bayern,215,2006,01,09,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Berlin,166,2006,01,11,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Brandenburg,51,2006,01,12,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bremen,143,2006,01,04,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Hamburg,977,2006,01,02,0,0,0,1,1,fee state (eventually)
+Schleswig-Holstein,Hessen,193,2006,01,06,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Mecklenburg-Vorpommern,194,2006,01,13,0,0,0,0,1,"never-fee, bordering"
+Schleswig-Holstein,Niedersachsen,641,2006,01,03,0,0,1,1,1,fee state (eventually)
+Schleswig-Holstein,Nordrhein-Westfalen,440,2006,01,05,0,0,1,1,0,fee state (eventually)
+Schleswig-Holstein,Rheinland-Pfalz,65,2006,01,07,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Saarland,16,2006,01,10,0,0,0,1,0,fee state (eventually)
+Schleswig-Holstein,Sachsen,72,2006,01,14,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Sachsen-Anhalt,56,2006,01,15,0,0,0,0,0,"never-fee, distant"
+Bayern,Berlin,436,2007,09,11,1,1,0,0,0,"never-fee, distant"
+Bayern,Brandenburg,85,2007,09,12,1,1,0,0,0,"never-fee, distant"
+Bayern,Bremen,59,2007,09,04,1,1,0,0,0,"never-fee, distant"
+Bayern,Hamburg,292,2007,09,02,1,1,1,1,0,fee state (eventually)
+Bayern,Hessen,923,2007,09,06,1,1,1,1,1,fee state (eventually)
+Bayern,Mecklenburg-Vorpommern,92,2007,09,13,1,1,0,0,0,"never-fee, distant"
+Bayern,Niedersachsen,274,2007,09,03,1,1,1,1,0,fee state (eventually)
+Bayern,Nordrhein-Westfalen,822,2007,09,05,1,1,1,1,0,fee state (eventually)
+Bayern,Rheinland-Pfalz,269,2007,09,07,1,1,0,0,0,"never-fee, distant"
+Bayern,Saarland,59,2007,09,10,1,1,1,1,0,fee state (eventually)
+Bayern,Sachsen,409,2007,09,14,1,1,0,0,1,"never-fee, bordering"
+Bayern,Sachsen-Anhalt,119,2007,09,15,1,1,0,0,0,"never-fee, distant"
+Bayern,Schleswig-Holstein,70,2007,09,01,1,1,0,0,0,"never-fee, distant"
+Berlin,Bayern,313,2007,11,09,0,0,1,1,0,fee state (eventually)
+Berlin,Brandenburg,2370,2007,11,12,0,0,0,0,1,"never-fee, bordering"
+Berlin,Bremen,75,2007,11,04,0,0,0,0,0,"never-fee, distant"
+Berlin,Hamburg,146,2007,11,02,0,0,1,1,0,fee state (eventually)
+Berlin,Hessen,221,2007,11,06,0,0,1,1,0,fee state (eventually)
+Berlin,Mecklenburg-Vorpommern,359,2007,11,13,0,0,0,0,0,"never-fee, distant"
+Berlin,Niedersachsen,224,2007,11,03,0,0,1,1,0,fee state (eventually)
+Berlin,Nordrhein-Westfalen,492,2007,11,05,0,0,1,1,0,fee state (eventually)
+Berlin,Rheinland-Pfalz,76,2007,11,07,0,0,0,0,0,"never-fee, distant"
+Berlin,Saarland,28,2007,11,10,0,0,1,1,0,fee state (eventually)
+Berlin,Sachsen,391,2007,11,14,0,0,0,0,0,"never-fee, distant"
+Berlin,Sachsen-Anhalt,191,2007,11,15,0,0,0,0,0,"never-fee, distant"
+Berlin,Schleswig-Holstein,89,2007,11,01,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Bayern,266,2007,12,09,0,0,1,1,0,fee state (eventually)
+Brandenburg,Berlin,2153,2007,12,11,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Bremen,51,2007,12,04,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Hamburg,131,2007,12,02,0,0,1,1,0,fee state (eventually)
+Brandenburg,Hessen,199,2007,12,06,0,0,1,1,0,fee state (eventually)
+Brandenburg,Mecklenburg-Vorpommern,572,2007,12,13,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Niedersachsen,256,2007,12,03,0,0,1,1,1,fee state (eventually)
+Brandenburg,Nordrhein-Westfalen,308,2007,12,05,0,0,1,1,0,fee state (eventually)
+Brandenburg,Rheinland-Pfalz,66,2007,12,07,0,0,0,0,0,"never-fee, distant"
+Brandenburg,Saarland,13,2007,12,10,0,0,1,1,0,fee state (eventually)
+Brandenburg,Sachsen,1072,2007,12,14,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Sachsen-Anhalt,384,2007,12,15,0,0,0,0,1,"never-fee, bordering"
+Brandenburg,Schleswig-Holstein,175,2007,12,01,0,0,0,0,0,"never-fee, distant"
+Bremen,Bayern,54,2007,04,09,0,0,1,1,0,fee state (eventually)
+Bremen,Berlin,63,2007,04,11,0,0,0,0,0,"never-fee, distant"
+Bremen,Brandenburg,9,2007,04,12,0,0,0,0,0,"never-fee, distant"
+Bremen,Hamburg,75,2007,04,02,0,0,1,1,0,fee state (eventually)
+Bremen,Hessen,48,2007,04,06,0,0,1,1,0,fee state (eventually)
+Bremen,Mecklenburg-Vorpommern,13,2007,04,13,0,0,0,0,0,"never-fee, distant"
+Bremen,Niedersachsen,361,2007,04,03,0,0,1,1,1,fee state (eventually)
+Bremen,Nordrhein-Westfalen,170,2007,04,05,0,0,1,1,0,fee state (eventually)
+Bremen,Rheinland-Pfalz,20,2007,04,07,0,0,0,0,0,"never-fee, distant"
+Bremen,Saarland,7,2007,04,10,0,0,1,1,0,fee state (eventually)
+Bremen,Sachsen,30,2007,04,14,0,0,0,0,0,"never-fee, distant"
+Bremen,Sachsen-Anhalt,14,2007,04,15,0,0,0,0,0,"never-fee, distant"
+Bremen,Schleswig-Holstein,59,2007,04,01,0,0,0,0,0,"never-fee, distant"
+Hamburg,Bayern,146,2007,02,09,1,1,1,1,0,fee state (eventually)
+Hamburg,Berlin,119,2007,02,11,1,1,0,0,0,"never-fee, distant"
+Hamburg,Brandenburg,37,2007,02,12,1,1,0,0,0,"never-fee, distant"
+Hamburg,Bremen,124,2007,02,04,1,1,0,0,0,"never-fee, distant"
+Hamburg,Hessen,107,2007,02,06,1,1,1,1,0,fee state (eventually)
+Hamburg,Mecklenburg-Vorpommern,109,2007,02,13,1,1,0,0,0,"never-fee, distant"
+Hamburg,Niedersachsen,506,2007,02,03,1,1,1,1,1,fee state (eventually)
+Hamburg,Nordrhein-Westfalen,305,2007,02,05,1,1,1,1,0,fee state (eventually)
+Hamburg,Rheinland-Pfalz,34,2007,02,07,1,1,0,0,0,"never-fee, distant"
+Hamburg,Saarland,15,2007,02,10,1,1,1,1,0,fee state (eventually)
+Hamburg,Sachsen,80,2007,02,14,1,1,0,0,0,"never-fee, distant"
+Hamburg,Sachsen-Anhalt,20,2007,02,15,1,1,0,0,0,"never-fee, distant"
+Hamburg,Schleswig-Holstein,491,2007,02,01,1,1,0,0,1,"never-fee, bordering"
+Hessen,Bayern,1110,2007,06,09,1,1,1,1,1,fee state (eventually)
+Hessen,Berlin,243,2007,06,11,1,1,0,0,0,"never-fee, distant"
+Hessen,Brandenburg,52,2007,06,12,1,1,0,0,0,"never-fee, distant"
+Hessen,Bremen,70,2007,06,04,1,1,0,0,0,"never-fee, distant"
+Hessen,Hamburg,170,2007,06,02,1,1,1,1,0,fee state (eventually)
+Hessen,Mecklenburg-Vorpommern,81,2007,06,13,1,1,0,0,0,"never-fee, distant"
+Hessen,Niedersachsen,581,2007,06,03,1,1,1,1,1,fee state (eventually)
+Hessen,Nordrhein-Westfalen,1237,2007,06,05,1,1,1,1,1,fee state (eventually)
+Hessen,Rheinland-Pfalz,1510,2007,06,07,1,1,0,0,1,"never-fee, bordering"
+Hessen,Saarland,45,2007,06,10,1,1,1,1,0,fee state (eventually)
+Hessen,Sachsen,186,2007,06,14,1,1,0,0,0,"never-fee, distant"
+Hessen,Sachsen-Anhalt,84,2007,06,15,1,1,0,0,0,"never-fee, distant"
+Hessen,Schleswig-Holstein,92,2007,06,01,1,1,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Bayern,127,2007,13,09,0,0,1,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Berlin,535,2007,13,11,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Brandenburg,172,2007,13,12,0,0,0,0,1,"never-fee, bordering"
+Mecklenburg-Vorpommern,Bremen,99,2007,13,04,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Hamburg,250,2007,13,02,0,0,1,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Hessen,79,2007,13,06,0,0,1,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Niedersachsen,253,2007,13,03,0,0,1,1,1,fee state (eventually)
+Mecklenburg-Vorpommern,Nordrhein-Westfalen,241,2007,13,05,0,0,1,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Rheinland-Pfalz,51,2007,13,07,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Saarland,8,2007,13,10,0,0,1,1,0,fee state (eventually)
+Mecklenburg-Vorpommern,Sachsen,311,2007,13,14,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Sachsen-Anhalt,171,2007,13,15,0,0,0,0,0,"never-fee, distant"
+Mecklenburg-Vorpommern,Schleswig-Holstein,420,2007,13,01,0,0,0,0,1,"never-fee, bordering"
+Niedersachsen,Bayern,771,2007,03,09,1,1,1,1,0,fee state (eventually)
+Niedersachsen,Berlin,465,2007,03,11,1,1,0,0,0,"never-fee, distant"
+Niedersachsen,Brandenburg,160,2007,03,12,1,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Bremen,1597,2007,03,04,1,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Hamburg,979,2007,03,02,1,1,1,1,1,fee state (eventually)
+Niedersachsen,Hessen,1048,2007,03,06,1,1,1,1,1,fee state (eventually)
+Niedersachsen,Mecklenburg-Vorpommern,262,2007,03,13,1,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Nordrhein-Westfalen,2816,2007,03,05,1,1,1,1,1,fee state (eventually)
+Niedersachsen,Rheinland-Pfalz,241,2007,03,07,1,1,0,0,0,"never-fee, distant"
+Niedersachsen,Saarland,50,2007,03,10,1,1,1,1,0,fee state (eventually)
+Niedersachsen,Sachsen,363,2007,03,14,1,1,0,0,0,"never-fee, distant"
+Niedersachsen,Sachsen-Anhalt,465,2007,03,15,1,1,0,0,1,"never-fee, bordering"
+Niedersachsen,Schleswig-Holstein,867,2007,03,01,1,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Bayern,1396,2007,05,09,1,1,1,1,0,fee state (eventually)
+Nordrhein-Westfalen,Berlin,697,2007,05,11,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Brandenburg,159,2007,05,12,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Bremen,325,2007,05,04,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Hamburg,550,2007,05,02,1,1,1,1,0,fee state (eventually)
+Nordrhein-Westfalen,Hessen,1783,2007,05,06,1,1,1,1,1,fee state (eventually)
+Nordrhein-Westfalen,Mecklenburg-Vorpommern,192,2007,05,13,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Niedersachsen,2743,2007,05,03,1,1,1,1,1,fee state (eventually)
+Nordrhein-Westfalen,Rheinland-Pfalz,999,2007,05,07,1,1,0,0,1,"never-fee, bordering"
+Nordrhein-Westfalen,Saarland,101,2007,05,10,1,1,1,1,0,fee state (eventually)
+Nordrhein-Westfalen,Sachsen,379,2007,05,14,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Sachsen-Anhalt,174,2007,05,15,1,1,0,0,0,"never-fee, distant"
+Nordrhein-Westfalen,Schleswig-Holstein,315,2007,05,01,1,1,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bayern,385,2007,07,09,0,0,1,1,0,fee state (eventually)
+Rheinland-Pfalz,Berlin,111,2007,07,11,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Brandenburg,22,2007,07,12,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Bremen,27,2007,07,04,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Hamburg,80,2007,07,02,0,0,1,1,0,fee state (eventually)
+Rheinland-Pfalz,Hessen,1058,2007,07,06,0,0,1,1,1,fee state (eventually)
+Rheinland-Pfalz,Mecklenburg-Vorpommern,35,2007,07,13,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Niedersachsen,124,2007,07,03,0,0,1,1,0,fee state (eventually)
+Rheinland-Pfalz,Nordrhein-Westfalen,1138,2007,07,05,0,0,1,1,1,fee state (eventually)
+Rheinland-Pfalz,Saarland,276,2007,07,10,0,0,1,1,1,fee state (eventually)
+Rheinland-Pfalz,Sachsen,86,2007,07,14,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Sachsen-Anhalt,31,2007,07,15,0,0,0,0,0,"never-fee, distant"
+Rheinland-Pfalz,Schleswig-Holstein,24,2007,07,01,0,0,0,0,0,"never-fee, distant"
+Saarland,Bayern,111,2007,10,09,1,1,1,1,0,fee state (eventually)
+Saarland,Berlin,29,2007,10,11,1,1,0,0,0,"never-fee, distant"
+Saarland,Brandenburg,9,2007,10,12,1,1,0,0,0,"never-fee, distant"
+Saarland,Bremen,5,2007,10,04,1,1,0,0,0,"never-fee, distant"
+Saarland,Hamburg,15,2007,10,02,1,1,1,1,0,fee state (eventually)
+Saarland,Hessen,129,2007,10,06,1,1,1,1,0,fee state (eventually)
+Saarland,Mecklenburg-Vorpommern,5,2007,10,13,1,1,0,0,0,"never-fee, distant"
+Saarland,Niedersachsen,27,2007,10,03,1,1,1,1,0,fee state (eventually)
+Saarland,Nordrhein-Westfalen,138,2007,10,05,1,1,1,1,0,fee state (eventually)
+Saarland,Rheinland-Pfalz,1206,2007,10,07,1,1,0,0,1,"never-fee, bordering"
+Saarland,Sachsen,10,2007,10,14,1,1,0,0,0,"never-fee, distant"
+Saarland,Sachsen-Anhalt,6,2007,10,15,1,1,0,0,0,"never-fee, distant"
+Saarland,Schleswig-Holstein,9,2007,10,01,1,1,0,0,0,"never-fee, distant"
+Sachsen,Bayern,705,2007,14,09,0,0,1,1,1,fee state (eventually)
+Sachsen,Berlin,437,2007,14,11,0,0,0,0,0,"never-fee, distant"
+Sachsen,Brandenburg,409,2007,14,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Bremen,35,2007,14,04,0,0,0,0,0,"never-fee, distant"
+Sachsen,Hamburg,67,2007,14,02,0,0,1,1,0,fee state (eventually)
+Sachsen,Hessen,342,2007,14,06,0,0,1,1,0,fee state (eventually)
+Sachsen,Mecklenburg-Vorpommern,216,2007,14,13,0,0,0,0,0,"never-fee, distant"
+Sachsen,Niedersachsen,193,2007,14,03,0,0,1,1,0,fee state (eventually)
+Sachsen,Nordrhein-Westfalen,345,2007,14,05,0,0,1,1,0,fee state (eventually)
+Sachsen,Rheinland-Pfalz,108,2007,14,07,0,0,0,0,0,"never-fee, distant"
+Sachsen,Saarland,14,2007,14,10,0,0,1,1,0,fee state (eventually)
+Sachsen,Sachsen-Anhalt,926,2007,14,15,0,0,0,0,1,"never-fee, bordering"
+Sachsen,Schleswig-Holstein,71,2007,14,01,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Bayern,321,2007,15,09,0,0,1,1,0,fee state (eventually)
+Sachsen-Anhalt,Berlin,486,2007,15,11,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Brandenburg,271,2007,15,12,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Bremen,50,2007,15,04,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Hamburg,91,2007,15,02,0,0,1,1,0,fee state (eventually)
+Sachsen-Anhalt,Hessen,296,2007,15,06,0,0,1,1,0,fee state (eventually)
+Sachsen-Anhalt,Mecklenburg-Vorpommern,263,2007,15,13,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Niedersachsen,623,2007,15,03,0,0,1,1,1,fee state (eventually)
+Sachsen-Anhalt,Nordrhein-Westfalen,307,2007,15,05,0,0,1,1,0,fee state (eventually)
+Sachsen-Anhalt,Rheinland-Pfalz,76,2007,15,07,0,0,0,0,0,"never-fee, distant"
+Sachsen-Anhalt,Saarland,11,2007,15,10,0,0,1,1,0,fee state (eventually)
+Sachsen-Anhalt,Sachsen,1662,2007,15,14,0,0,0,0,1,"never-fee, bordering"
+Sachsen-Anhalt,Schleswig-Holstein,108,2007,15,01,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bayern,234,2007,01,09,0,0,1,1,0,fee state (eventually)
+Schleswig-Holstein,Berlin,150,2007,01,11,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Brandenburg,57,2007,01,12,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Bremen,181,2007,01,04,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Hamburg,1088,2007,01,02,0,0,1,1,1,fee state (eventually)
+Schleswig-Holstein,Hessen,176,2007,01,06,0,0,1,1,0,fee state (eventually)
+Schleswig-Holstein,Mecklenburg-Vorpommern,252,2007,01,13,0,0,0,0,1,"never-fee, bordering"
+Schleswig-Holstein,Niedersachsen,735,2007,01,03,0,0,1,1,1,fee state (eventually)
+Schleswig-Holstein,Nordrhein-Westfalen,415,2007,01,05,0,0,1,1,0,fee state (eventually)
+Schleswig-Holstein,Rheinland-Pfalz,76,2007,01,07,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Saarland,19,2007,01,10,0,0,1,1,0,fee state (eventually)
+Schleswig-Holstein,Sachsen,101,2007,01,14,0,0,0,0,0,"never-fee, distant"
+Schleswig-Holstein,Sachsen-Anhalt,60,2007,01,15,0,0,0,0,0,"never-fee, distant"
