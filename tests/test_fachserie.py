@@ -26,14 +26,17 @@ sys.path.insert(0, str(ROOT))
 
 RAW = ROOT / "data" / "raw" / "fachserie"
 PANEL = ROOT / "data" / "processed" / "panel.parquet"
-WINDOW = [2003, 2004, 2005, 2006, 2007]
+WINDOW = [2003, 2004, 2005, 2006, 2007]          # phase 2 (DESIGN.md 14.1)
+WINDOW_P3 = list(range(2007, 2016))              # phase 3 (DESIGN.md 15.3)
 
-VOLUMES = sorted(glob.glob(str(RAW / "*.xls")))
+# both .xls and .xlsx: Destatis switched format from WS 2013/14
 pytestmark = pytest.mark.skipif(
-    not VOLUMES,
+    not any(RAW.glob("*.xls*")),
     reason="Fachserie volumes not present; see src/acquire.py")
 
 from src import fachserie as fsx  # noqa: E402  (after the path insert)
+
+VOLUMES = fsx.select_volumes(RAW, WINDOW[0], WINDOW[-1]) if any(RAW.glob("*.xls*")) else []
 
 
 @pytest.fixture(scope="module")
@@ -184,3 +187,44 @@ def test_flows_long_is_complete():
     assert len(lf) == 16 * 16 * len(WINDOW)
     assert set(lf.columns) == {"origin", "destination", "first_years", "year"}
     assert lf["first_years"].notna().all()
+
+
+# ---------------------------------------------------------------------------
+# phase 3 window (DESIGN.md 15)
+# ---------------------------------------------------------------------------
+
+def _p3():
+    try:
+        return fsx.select_volumes(RAW, WINDOW_P3[0], WINDOW_P3[-1])
+    except FileNotFoundError:
+        return []
+
+
+@pytest.mark.skipif(not _p3(), reason="phase 3 volumes not present")
+def test_phase3_window_is_complete():
+    years = [fsx.winter_semester_year(v) for v in _p3()]
+    assert years == WINDOW_P3, f"expected {WINDOW_P3}, got {years}"
+
+
+@pytest.mark.skipif(not _p3(), reason="phase 3 volumes not present")
+def test_phase3_volumes_reconcile():
+    """Every phase 3 volume, including the .xlsx ones, must reconcile exactly."""
+    bad = []
+    for v in _p3():
+        flows, total, extra, year = fsx.read_matrix(v)
+        r = fsx.validate(flows, total, extra)
+        if not (r["rows_reconcile"] and r["columns_reconcile"]):
+            bad.append(year)
+    assert not bad, f"volumes failing reconciliation: {bad}"
+
+
+def test_volume_selection_ignores_other_windows():
+    """Phase 2 must see exactly its five volumes even with phase 3 files present.
+
+    Guards the failure this was written for: a folder holding volumes for two
+    experiments, where globbing one extension silently changes the window.
+    """
+    if not any(RAW.glob("*.xls*")):
+        pytest.skip("no volumes")
+    years = [fsx.winter_semester_year(v) for v in VOLUMES]
+    assert years == WINDOW

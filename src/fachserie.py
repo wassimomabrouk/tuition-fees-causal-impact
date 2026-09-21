@@ -114,6 +114,34 @@ def validate(flows: pd.DataFrame, total: pd.Series, extra: pd.Series,
             "unattributed_share_pct": 100 * float(extra[STATES].sum()) / state_sum}
 
 
+def select_volumes(raw_dir: str | Path, first: int, last: int) -> list[str]:
+    """Volumes whose winter semester falls in [first, last], sorted by year.
+
+    Selection is by the semester read from inside each workbook, never by
+    filename or by what happens to be in the folder. Destatis switched from
+    .xls to .xlsx from WS 2013/14, and the folder holds volumes for more than
+    one experiment (phase 2: 2003-2007; phase 3: 2007-2015), so globbing a
+    single extension would either miss volumes or include the wrong window.
+
+    Raises if a requested year is missing or duplicated, since either would
+    silently change the panel.
+    """
+    raw_dir = Path(raw_dir)
+    found: dict[int, str] = {}
+    for p in sorted(raw_dir.glob("*.xls*")):
+        if p.name.startswith("~$"):              # Excel lock files
+            continue
+        y = winter_semester_year(p)
+        if first <= y <= last:
+            if y in found:
+                raise ValueError(f"two volumes for WS {y}: {found[y]} and {p.name}")
+            found[y] = str(p)
+    missing = [y for y in range(first, last + 1) if y not in found]
+    if missing:
+        raise FileNotFoundError(f"no volume for winter semester(s) {missing} in {raw_dir}")
+    return [found[y] for y in sorted(found)]
+
+
 def build_panel(paths) -> pd.DataFrame:
     """Long panel of the phase 2 outcomes, one row per state per winter semester.
 
