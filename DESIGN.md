@@ -772,6 +772,156 @@ panel for the overlapping years; and the matrix interior plus `Ausland` plus `oh
 must equal the `Insgesamt` column.
 
 
+## 15. Phase 3: does the effect reverse when the policy does?
+
+*Written after phase 2 shipped and before any phase 3 code. Phase 2 decomposed phase 1's fall
+into roughly -2.9% participation and -3.6% redistribution, but neither half cleared its own
+detection threshold, and with three pre-periods a pre-trend three times the size of the
+effect could pass the pre-trend test unrejected (notebook 07). Phase 3 attacks both problems
+with a second experiment on the same source.*
+
+### 15.1 The test this experiment adds
+
+If fees reduced enrolment, removing them should raise it again. The prediction is a **sign
+flip**: the abolition coefficient should be positive where the introduction coefficient was
+negative. A pre-existing trend does not reverse when a policy reverses; a causal effect should.
+This is the one test neither earlier window can run, and it is the reason for phase 3.
+
+**Reversal need not be symmetric**, and that is stated now so an asymmetric result is not
+over-read later. Several mechanisms could make the abolition effect smaller than the
+introduction effect without the introduction effect being spurious: students who moved
+state may have settled; universities may have adjusted capacity or admissions while fees were
+in force; information about the change may have spread more slowly than the change itself.
+A sign flip of any size is evidence for the introduction effect. **No flip is evidence
+against it only if the abolition design has the power to see one**, which 15.6 checks.
+
+### 15.2 Comparison group: the fee states themselves
+
+Section 2 committed the abolition experiment to be estimated **among the seven fee states**.
+That commitment is kept, and it turns out to be the strongest feature of this design.
+
+Callaway-Sant'Anna is run with **not-yet-treated** controls: each state that abolishes in a
+given year is compared against fee states that are **still charging** that year. The
+counterfactual for an abolishing state is then exactly the right one, a state that kept its
+fees, rather than a state that never had any.
+
+It also **removes the east-west confound** that phases 1 and 2 could only narrow. Every
+treated state and every control in this specification is western, and every one of them was
+under a CDU/CSU-era fee regime. The political-selection problem recorded in the README is not
+fully solved, since states chose their abolition dates too, but the comparison is now between
+states that all made the same first decision.
+
+**The cost is severe and is stated in advance.** The design has at most seven units, and the
+pool of not-yet-treated controls shrinks as states abolish:
+
+| cohort | abolishing | not-yet-treated controls available |
+|---|---|---|
+| 2008 | Hessen | 6 |
+| 2010 | Saarland | 5 |
+| 2011 | Nordrhein-Westfalen | 4 |
+| 2012 | Hamburg, Baden-Wuerttemberg | 2 |
+| 2013 | Bayern | 1 |
+| 2014 | Niedersachsen | **none** |
+
+Niedersachsen, abolishing last, has no not-yet-treated comparison at all and drops out of the
+primary specification. Bayern is compared against a single state.
+
+**Secondary specification: never-treated controls**, the nine states that never charged, as
+in phases 1 and 2. More power and continuity with the earlier phases, at the cost of
+reintroducing the east-west confound and of a weaker counterfactual: a never-fee state
+represents a fee state that kept its fees only if the introduction effect was a one-off level
+shift. Both are reported; the not-yet-treated specification is primary.
+
+### 15.3 Window
+
+**WS 2007/08 to WS 2015/16**, nine winter semesters.
+
+The start is set so that every treated state is **inside its fee regime** in the first period.
+For the abolition experiment the "before" state is fees in force, and in WS 2006/07 only
+Nordrhein-Westfalen and Niedersachsen were charging; the other five had not begun. Starting in
+2006 would put pre-introduction years into the abolition pre-period, mixing two regimes.
+
+Callaway-Sant'Anna uses year g-1 as each cohort's base, which is always a fee year from 2007
+onward, so the estimator is correct regardless. The window start matters for the **leads**,
+which are a pre-trend test only if every lead is a fee-regime year.
+
+The end is set by the next double cohort: Schleswig-Holstein, a never-treated state, has its
+G8 double cohort in 2016. Stopping at WS 2015/16 keeps it out.
+
+Leads available by cohort: Hessen 1, Saarland 3, Nordrhein-Westfalen 4, Hamburg and
+Baden-Wuerttemberg 5, Bayern 6, Niedersachsen 7. **Hessen charged for a single winter
+semester** and has effectively no pre-period inside its fee regime; its abolition estimate
+rests on one base year.
+
+### 15.4 Data
+
+Fachserie 11 Reihe 4.1, detailed table 6, **WS 2008/09 to WS 2015/16**: eight further volumes,
+added to WS 2007/08 already held. Same sheet, same parser, same validation rules as 14.8. The
+phase 2 extraction guards in `tests/test_fachserie.py` extend to the new window without
+modification, except the window constant.
+
+### 15.5 Confounds inside the window
+
+**G8 double cohorts**, from the verified `g8_dates.csv`. This is the principal threat, and it
+is worse here than in either earlier window because the double cohorts fall in the same years
+and the same states as the abolitions:
+
+| state | abolition | double cohort | gap |
+|---|---|---|---|
+| Hessen | 2008 | none (phased 2012-2014) | n/a |
+| Saarland | 2010 | 2009 | -1 |
+| Nordrhein-Westfalen | 2011 | 2013 | +2 |
+| Hamburg | 2012 | 2010 | -2 |
+| **Baden-Wuerttemberg** | **2012** | **2012** | **0** |
+| Bayern | 2013 | 2011 | -2 |
+| Niedersachsen | 2014 | 2011 | -3 |
+
+Baden-Wuerttemberg abolished fees and had its double cohort in the same year. **It is excluded
+from the primary specification** and reported in a leave-one-out, since its abolition effect
+cannot be separated from a doubling of its school leavers.
+
+Under the not-yet-treated design the controls are the other fee states, so their double
+cohorts enter the comparison directly. The outcomes are partly protected: a double cohort
+inflates a state's own school leavers, raising `origin`, and most of them stay, raising
+`german_location` too, so in `attraction` the shock enters numerator and denominator together
+and largely cancels. `retention` behaves similarly. `log(origin)` is **not** protected and is
+expected to spike in double-cohort years. A double-cohort indicator is included as a
+covariate and the estimates are reported with and without it.
+
+**The end of conscription** in July 2011 released a cohort of young men into higher education
+nationally. It is common to all states, so year fixed effects absorb its level; any
+differential effect by state would need the male share of first-years, which table 6 reports
+separately (the `m` rows) and which is used as a check if the 2011 estimates look anomalous.
+
+### 15.6 Power, before estimation
+
+Computed in the first phase 3 notebook on the **pre-abolition fee-regime years only**, using
+`src/estimation.py`, before any abolition effect is estimated.
+
+The threshold that matters is not the phase 1 effect size but **the smallest reversal worth
+detecting**. Phase 2 put participation at -2.9% and attraction at -3.6%. If the abolition MDE
+on either outcome exceeds the corresponding phase 2 estimate, the design cannot see a full
+reversal, and a null result is reported as uninformative rather than as evidence that the
+introduction effect was spurious. Given six effective units under not-yet-treated controls,
+**that outcome is plausible and is flagged now** rather than discovered after estimation.
+
+Randomisation inference over six or seven units has a small permutation space, so exact
+enumeration replaces random draws, and the smallest achievable p-value is reported alongside
+the result.
+
+### 15.7 What counts as which answer, fixed before estimation
+
+| `origin` after abolition | `attraction` after abolition | reading |
+|---|---|---|
+| rises | rises | **both mechanisms reverse**, corroborating the phase 2 split |
+| flat | rises | **redistribution reverses**, participation does not |
+| rises | flat | **participation reverses**, redistribution does not |
+| flat | flat | **no reversal detected**; read against 15.6 before interpreting |
+| falls | any | inconsistent with a fee effect; investigate before reporting |
+
+"Rises" means a positive estimate that clears its own MDE and whose interval excludes zero,
+the same double condition used throughout phase 2.
+
 ## References
 
 - Callaway, B. and Sant'Anna, P. (2021). *Difference-in-Differences with Multiple Time Periods.* Journal of Econometrics.
