@@ -1,0 +1,7 @@
+spec,outcome,estimate,MDE,within MDE
+"primary, not-yet-treated",attraction,0.05098233849702253,0.15297185929060467,"yes, uninformative"
+"secondary, never-treated",attraction,0.0007116566418234007,0.16263785350947585,"yes, uninformative"
+"primary, not-yet-treated",participation,-0.05430640454332475,0.20292165877369664,"yes, uninformative"
+"secondary, never-treated",participation,0.14141289260350803,0.3058845525966552,"yes, uninformative"
+"primary, not-yet-treated",retention,0.013933560045283306,0.0581298172613457,"yes, uninformative"
+"secondary, never-treated",retention,0.016521575653350107,0.04372336731824621,"yes, uninformative"

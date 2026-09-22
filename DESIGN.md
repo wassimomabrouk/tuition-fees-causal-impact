@@ -922,6 +922,62 @@ the result.
 "Rises" means a positive estimate that clears its own MDE and whose interval excludes zero,
 the same double condition used throughout phase 2.
 
+### 15.8 Outcome: phase 3 is underpowered, and estimation is not pursued as a test
+
+*Added after the power calculation in notebook 10. Everything above this subsection was
+committed as `b0c3575` before any phase 3 code was written, and none of it has been changed.*
+
+**The design cannot detect the reversal it was built to find.** Computed by exact enumeration
+of all 720 assignments of the six abolition dates for the primary specification, and 2 000
+permutations for the secondary:
+
+| specification | outcome | MDE | reversal to detect | ratio |
+|---|---|---|---|---|
+| primary, not-yet-treated | attraction | +16.5% | 3.6% | about 4x |
+| primary, not-yet-treated | participation | +22.5% | 2.9% | about 7x |
+| secondary, never-treated | attraction | +17.7% | 3.6% | about 4x |
+| secondary, never-treated | participation | +35.8% | 2.9% | about 10x |
+
+The permutation spread is computed on realised data and is therefore conservative, but
+halving it would still leave the MDE above the target on every outcome.
+
+**The cause is the period, not the specification.** With identical outcomes and identical
+state and year fixed effects, the residual standard deviation across 2007 to 2015 is 2.2
+times phase 2's on attraction and 4.5 times on participation. The abolitions coincided with
+the Hochschulpakt expansion (national first-years rose 51 percent between WS 2006/07 and
+WS 2011/12), the end of conscription in 2011, rising internationalisation (the unattributable
+share rose from 13 to 17 percent), and G8 double cohorts in most states. Double-cohort
+state-years are noisier than the rest, but the rest of the window is noisier than phase 2
+too, so excluding them would not recover the lost precision.
+
+**A second consequence of the primary design**, predicted in 15.2 and confirmed: with no
+never-treated units, the estimator makes the last abolisher (Niedersachsen, 2014) the
+comparison group for every other cohort and drops every period from 2014 onward. The
+effective primary window is WS 2007/08 to WS 2013/14.
+
+**Disclosure.** The point estimates were printed once, during a check that the estimator
+executed, before this power calculation was run. The specification had already been
+committed and has not been altered. The estimates are reported in notebook 10 alongside their
+MDEs and labelled uninformative, without inference.
+
+**What this does and does not mean.** Under 15.7, the reading is "no reversal detected", and
+under 15.1 that is **not** evidence that the introduction effect was spurious, because the
+design could not have seen a reversal of the size phase 2 implies. Phase 2's decomposition
+stands as a point estimate, neither strengthened nor weakened by phase 3.
+
+**Why the design is not modified to rescue it.** A shorter window, a different comparison
+group or the exclusion of double-cohort years might each reduce the noise. Each would be a
+specification choice made after the estimates had been seen, and there would be no way to
+show it was not chosen to produce a significant result. The committed specification is
+the only one that can be defended, and it says the answer is uninformative.
+
+**What would make the test possible.** Not more years: the primary specification has no
+controls left after 2014, and later years bring the Schleswig-Holstein double cohort (2016),
+the G9 reversals (the Niedersachsen missing cohort around 2020) and COVID. The binding
+constraint is units. Enrolment at the level of individual universities or districts would
+turn sixteen states into hundreds of units and is the natural extension if the question is
+pursued.
+
 ## References
 
 - Callaway, B. and Sant'Anna, P. (2021). *Difference-in-Differences with Multiple Time Periods.* Journal of Econometrics.

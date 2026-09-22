@@ -1,0 +1,7 @@
+spec,outcome,MDE,reversal to detect,MDE / target
+"primary, not-yet-treated",attraction,0.15297185929060467,0.0367,4.168170552877511
+"secondary, never-treated",attraction,0.16263785350947585,0.0367,4.4315491419475705
+"primary, not-yet-treated",participation,0.20292165877369664,0.0295,6.878700297413446
+"secondary, never-treated",participation,0.3058845525966552,0.0295,10.36896788463238
+"primary, not-yet-treated",retention,0.0581298172613457,0.006,9.68830287689095
+"secondary, never-treated",retention,0.04372336731824621,0.006,7.287227886374369

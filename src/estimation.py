@@ -133,6 +133,43 @@ def cs_overall_fast(panel: pd.DataFrame, outcome: str,
     return float(num / den) if den else float("nan")
 
 
+def cs_overall_nyt_fast(panel: pd.DataFrame, outcome: str, cohort_col="abol",
+                        unit="state_code", time="year") -> float:
+    """Closed form of Callaway-Sant'Anna with NOT-YET-TREATED controls.
+
+    For a sample with no never-treated units, which is the phase 3 primary
+    specification (DESIGN.md 15.2). `differences` then uses the last cohort as
+    the comparison group and keeps only periods before the last cohort's date;
+    this reproduces that exactly. Each group-time effect is a 2x2 difference
+    against units not yet treated at t, excluding the group itself.
+
+    Used only inside resampling loops, and verified against the package in the
+    notebook before use.
+    """
+    y = panel.pivot(index=unit, columns=time, values=outcome)
+    g = (panel.drop_duplicates(unit).set_index(unit)[cohort_col]).reindex(y.index)
+    last = g.max()
+    years = [t for t in y.columns if t < last]
+    num = den = 0.0
+    for cohort in sorted(g.dropna().unique()):
+        if cohort == last:
+            continue
+        grp = g == cohort
+        base = cohort - 1
+        if base not in y.columns:
+            continue
+        for t in [t for t in years if t >= cohort]:
+            ctrl = (g > t) & ~grp
+            if not ctrl.any():
+                continue
+            att = ((y.loc[grp, t] - y.loc[grp, base]).mean()
+                   - (y.loc[ctrl, t] - y.loc[ctrl, base]).mean())
+            w = int(grp.sum())
+            num += w * att
+            den += w
+    return float(num / den) if den else float("nan")
+
+
 def cs_event_study(panel: pd.DataFrame, outcome: str, **kw) -> pd.DataFrame:
     """Relative-period ATTs, with the relative period as a column named `rel`."""
     ev = tidy_att(callaway_santanna(panel, outcome, **kw).aggregate("event"))

@@ -8,16 +8,20 @@ roughly **5 to 7 percent**. Distinguishable from zero under randomisation infere
 (p = 0.009), stable in sign across every comparison group, dropped state and placebo date
 tested. The honest interval is wide, about -1% to -12%.
 
-**Phase 2.** That fall splits almost exactly in half: **-2.9% fewer school leavers from fee
-states enrolling anywhere**, and **-3.6% fewer students hosted relative to what those states
-produced**. Both deterrence and diversion, in similar measure. The two halves sum to -6.4%,
+**Phase 2.** That fall splits almost exactly in half: **2.9% fewer school leavers from fee
+states went to university at all**, and **fee states' universities took in 3.6% fewer
+first-years, relative to how many of their own school leavers started university**. Both deterrence and diversion, in similar measure. The two halves sum to -6.4%,
 reproducing phase 1 on an independently constructed outcome, but neither half individually
 clears the threshold this design can detect, so the split is a point estimate rather than an
 established result.
 
-> **Status:** both phases complete. The abolition window, seven staggered fee reversals
-> between WS 2008/09 and WS 2014/15, is specified but not built. `DESIGN.md` was written
-> before any code and records every subsequent revision with its reasoning.
+**Phase 3.** A test of whether the effect reversed when fees were abolished was designed
+and powered before any estimation, and found too weak to answer: its minimum detectable
+effect (16 to 36 percent) is four to ten times larger than the reversal it had to detect
+(2.9 to 3.6 percent). See below.
+
+> **Status:** three phases complete. `DESIGN.md` was written before any code and records
+> every subsequent revision with its reasoning, including the phase 3 outcome.
 
 ---
 
@@ -263,6 +267,26 @@ Under **western-only controls** every phase 2 estimate weakens and none clears i
 
 ---
 
+# Phase 3: does the effect reverse when fees are abolished?
+
+If fees caused the fall, abolishing them should reverse it, and a reversal would have turned
+phase 2's split from a point estimate into a confirmed result. Seven states abolished fees
+between WS 2008/09 and WS 2014/15, on the same Fachserie table phase 2 reads.
+
+The design (`DESIGN.md` section 15) was committed before any phase 3 code. Its power
+calculation, run before estimation by exact enumeration of all 720 assignments of the
+abolition dates, shows the minimum detectable effect is **16 to 36 percent** against a
+reversal of **3 to 4 percent** to detect. The abolitions coincided with the Hochschulpakt
+expansion, the end of conscription and G8 double cohorts in most states, and the same outcomes
+are two to four times noisier in that window than in phase 2's.
+
+So no reversal is detected, and that is **not** evidence against phases 1 and 2: the design
+could not have seen one. Details, including a disclosure that the point estimates were
+printed once before the power calculation, are in
+[`notebooks/10_phase3_power.ipynb`](notebooks/10_phase3_power.ipynb) and `DESIGN.md` 15.8.
+
+---
+
 ## What this study cannot say
 
 - **That the phase 2 split is established.** Both halves are point estimates below their
@@ -285,6 +309,8 @@ Under **western-only controls** every phase 2 estimate weakens and none clears i
   violation (Rambachan and Roth), scheduled for future work.
 - **That phase 2's pre-trends are clean enough.** With three pre-periods, a pre-trend roughly
   three times the size of the effect would pass the test unrejected.
+- **Whether the effect reversed when fees were abolished.** The phase 3 design is four to
+  ten times too underpowered to tell.
 
 ## Reproduce it
 
@@ -293,18 +319,18 @@ pip install -r requirements.txt
 python src/acquire.py     # prints the exact sources and how to slice them
 # ...download the GENESIS CSV into data/raw/ and the Fachserie xls into data/raw/fachserie/
 python run_all.py         # builds the panel and runs the pipeline tests
-# then run notebooks/01-09 in order
+# then run notebooks/01-10 in order
 ```
 
 Raw data is gitignored. `src/acquire.py` is the reproducible record of which tables to pull;
-`tests/` holds 30 guards over the panel, the hand-coded treatment dates and the Fachserie
+`tests/` holds 33 guards over the panel, the hand-coded treatment dates and the Fachserie
 extraction, including the cell-by-cell reconciliation between the two publications. Random
 seeds are fixed, so the permutation results reproduce exactly.
 
 ## Repository layout
 
 ```
-DESIGN.md              identification strategy, incl. section 0 feasibility and section 14 phase 2
+DESIGN.md              identification strategy; section 14 phase 2, section 15 phase 3
 run_all.py             single entry point for the pipeline
 data/
   raw/                 GENESIS download and Fachserie volumes (gitignored)
@@ -318,8 +344,8 @@ src/
   fachserie.py         phase 2: origin-destination matrix extraction
   estimation.py        TWFE, Callaway-Sant'Anna, event study, MDE
   robustness.py        placebos, leave-one-out, comparison groups
-notebooks/             01-05 phase 1, 06-09 phase 2
-tests/                 30 pipeline guards (pytest)
+notebooks/             01-05 phase 1, 06-09 phase 2, 10 phase 3
+tests/                 33 pipeline guards (pytest)
 results/
   figures/             plots used in the write-up
   tables/              estimation and robustness tables
